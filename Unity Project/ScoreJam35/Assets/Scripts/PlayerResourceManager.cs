@@ -46,4 +46,43 @@ public class PlayerResourceManager : MonoBehaviour
     {
         img.fillAmount = (float)amount / max;
     }
+
+    public void ChangeWater(int change)
+    {
+        water += change;
+        if (water < 0)
+        {
+
+        }
+        water = Mathf.Clamp(water, 0, MaxWater);
+    }
+    
+    public int GetWater()
+    {
+        return water;
+    }
+
+    public void ChangeFood(int change)
+    {
+        food += change;
+        if (food < 0)
+        {
+            
+        }
+        food = Mathf.Clamp(food, 0, MaxFood);
+    }
+
+    public int GetFood()
+    {
+        return food;
+    }
+
+    public void ChangeHealth(int change)
+    {
+        health += change;
+        if (health <= 0)
+        {
+            //dead
+        }
+    }
 }
