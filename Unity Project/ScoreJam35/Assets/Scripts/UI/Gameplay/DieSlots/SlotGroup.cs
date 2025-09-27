@@ -4,6 +4,7 @@ using UnityEngine;
 public class SlotGroup : MonoBehaviour
 {
     public BaseDiceAction ActionOnFilled = null;
+    public int SlotCount = 1;
 
     List<BaseDieSlot> slots = new List<BaseDieSlot>();
     int totalDieValue = 0;
@@ -27,7 +28,7 @@ public class SlotGroup : MonoBehaviour
 
     public bool AllSlotsFilled()
     {
-        return currentFilledSlots == slots.Count;
+        return currentFilledSlots == SlotCount;
     }
 
     public void FillSlot(int dieValue, BaseDieSlot slot)
