@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ClickedDieParent : MonoBehaviour
 {
     public static ClickedDieParent Instance { get; private set; }
 
     public float LerpSpeed = 5.0f;
+    public float ZPosition = 0;
 
     Transform currDie = null;
 
@@ -22,7 +24,9 @@ public class ClickedDieParent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition), LerpSpeed * Time.deltaTime);
+        Vector3 pos = Vector3.Lerp(transform.position, Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()), LerpSpeed * Time.deltaTime);
+        pos.z = ZPosition;
+        transform.position = pos;
     }
 
     public void SetCurrentDie(Transform newDie)
@@ -34,5 +38,6 @@ public class ClickedDieParent : MonoBehaviour
         }
 
         currDie.SetParent(transform);
+        currDie.localPosition = Vector3.zero;
     }
 }

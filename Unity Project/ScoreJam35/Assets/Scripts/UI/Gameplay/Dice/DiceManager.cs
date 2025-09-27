@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DiceManager : MonoBehaviour
 {
+    public static DiceManager Instance { get; private set; } = null;
+
     public int DicePerTurn = 4;
     public GameObject DicePrefab = null;
     public Vector2 DiceStartPos = Vector2.zero;
@@ -17,15 +19,22 @@ public class DiceManager : MonoBehaviour
     float timer = 0;
     bool gettingInPlay = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        
+        if (Instance != null)
+        {
+            DestroyImmediate(gameObject);
+            return;
+        }
+
+        Instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
+        VerifyDice();
+
         if (gettingInPlay)
         {
             UpdateDicePos();
@@ -36,13 +45,27 @@ public class DiceManager : MonoBehaviour
         }
     }
 
+    void VerifyDice()
+    {
+        for(int i = 0; i < dice.Count;)
+        {
+            Transform die = dice[i];
+            if(die == null || die.parent != transform)
+            {
+                dice.RemoveAt(i);
+                continue;
+            }
+            ++i;
+        }
+    }
+
     void UpdateDicePos()
     {
         for(int i = 0; i < dice.Count; ++i)
         {
             Vector3 correctPos = DiceStartPos + (Vector2.right * DiceXSpacing * i);
             correctPos.y = InPlayYPos;
-            correctPos.z = DiceZ;
+            correctPos.z = transform.position.z + DiceZ;
 
             Vector3 diePos = dice[i].position;
             diePos = Vector3.Lerp(diePos, correctPos, DiceLerpSpeed * Time.deltaTime);
@@ -64,6 +87,7 @@ public class DiceManager : MonoBehaviour
             float currY = Mathf.Lerp(DiceStartPos.y, InPlayYPos, 1.0f - (timer / InPlayTime));
             Vector3 diePos = die.position;
             diePos.y = currY;
+            diePos.z = transform.position.z + DiceZ;
             die.position = diePos;
         }
     }
@@ -73,9 +97,10 @@ public class DiceManager : MonoBehaviour
         for(int i = 0; i < DicePerTurn; i++)
         {
             Vector3 pos = DiceStartPos + (Vector2.right * DiceXSpacing * i);
-            pos.z = DiceZ;
+            pos.z = transform.position.z + DiceZ;
 
             GameObject die = Instantiate(DicePrefab, pos, Quaternion.identity, transform);
+            dice.Add(die.transform);
         }
 
         gettingInPlay = true;
@@ -89,6 +114,8 @@ public class DiceManager : MonoBehaviour
 
     public void ReAddDie(GameObject toAdd)
     {
+        toAdd.transform.SetParent(transform);
+
         dice.Add(toAdd.transform);
     }
 
@@ -99,5 +126,6 @@ public class DiceManager : MonoBehaviour
             // just kill em
             Destroy(die.gameObject);
         }
+        dice.Clear();
     }
 }

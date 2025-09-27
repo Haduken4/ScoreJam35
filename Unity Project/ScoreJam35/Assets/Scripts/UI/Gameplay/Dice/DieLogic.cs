@@ -1,6 +1,8 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
-public class DieLogic : MonoBehaviour
+public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     // Max inclusive
     public Vector2Int RollRange = new Vector2Int(1, 6);
@@ -21,18 +23,24 @@ public class DieLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Draggable)
+        {
+            return;
+        }
+
         if (dragging)
         {
-            if (Input.GetMouseButtonUp(0))
+            if (Mouse.current.leftButton.wasReleasedThisFrame)
             {
                 dragging = false;
                 ClickedDieParent.Instance.SetCurrentDie(null);
+                DiceManager.Instance.ReAddDie(gameObject);
                 // try to apply to colliding die slot?
             }
         }
         else if (mouseOver)
         {
-            if(Input.GetMouseButtonDown(0))
+            if(Mouse.current.leftButton.wasPressedThisFrame)
             {
                 dragging = true;
                 ClickedDieParent.Instance.SetCurrentDie(transform);
@@ -40,12 +48,12 @@ public class DieLogic : MonoBehaviour
         }
     }
 
-    private void OnMouseEnter()
+    public void OnPointerEnter(PointerEventData data)
     {
         mouseOver = true;
     }
 
-    private void OnMouseExit()
+    public void OnPointerExit(PointerEventData data)
     {
         mouseOver = false;
     }
