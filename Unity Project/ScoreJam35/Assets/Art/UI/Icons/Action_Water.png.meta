@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: cb7b9c5c6e4995c4b9d7a17e429dc91c
+guid: 28c391e7d011f6b4b9ac155b022021c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 219272655006455395
-    second: Action_Forage_0
-  - first:
-      213: 3564918340336533681
-    second: Action_Forage_1
-  - first:
-      213: 9072271989283698533
-    second: Action_Forage_2
-  - first:
-      213: -32056862836963889
-    second: Action_Forage_3
-  - first:
-      213: -8058743900398154178
-    second: Action_Forage_4
+      213: 7460437061825599893
+    second: Action_Water_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Action_Forage_0
+      name: Action_Water_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 101
-        width: 73
-        height: 54
+        x: 38
+        y: 0
+        width: 124
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 366dd9661530b0300800000000000000
-      internalID: 219272655006455395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Action_Forage_1
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 39
-        width: 72
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b0c801c752297130800000000000000
-      internalID: 3564918340336533681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Action_Forage_2
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 113
-        width: 103
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5673bfaae4f27ed70800000000000000
-      internalID: 9072271989283698533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Action_Forage_3
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 59
-        width: 78
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc54dfdf37c1e8ff0800000000000000
-      internalID: -32056862836963889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Action_Forage_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 25
-        width: 84
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3e0ce0ae17992090800000000000000
-      internalID: -8058743900398154178
+      spriteID: 599164b0bfbc88760800000000000000
+      internalID: 7460437061825599893
       vertices: []
       indices: 
       edges: []
@@ -248,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Action_Forage_0: 219272655006455395
-      Action_Forage_1: 3564918340336533681
-      Action_Forage_2: 9072271989283698533
-      Action_Forage_3: -32056862836963889
-      Action_Forage_4: -8058743900398154178
+      Action_Water_0: 7460437061825599893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

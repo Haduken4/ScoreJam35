@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class ValueRangeSlot : MonoBehaviour
+public class ValueRangeSlot : BaseDieSlot
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Vector2 AcceptableRange = new Vector2(1, 6);
 
-    // Update is called once per frame
-    void Update()
+    public override bool AttemptApplyDie(DieLogic die)
     {
-        
+        if (!base.AttemptApplyDie(die))
+        {
+            return false;
+        }
+
+
+        return (die.CurrentValue >= AcceptableRange.x) && (die.CurrentValue <= AcceptableRange.y);
     }
 }

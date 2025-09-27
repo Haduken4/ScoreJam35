@@ -34,7 +34,10 @@ public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointe
 
     bool CheckHovered()
     {
-        if (Mouse.current == null) return false;
+        if (Mouse.current == null || ActionSlotGroup.IsScaling())
+        {
+            return false;
+        }
 
         Vector2 mousePos = Mouse.current.position.ReadValue();
 
@@ -86,6 +89,11 @@ public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointe
             Destroy(slottedDie.gameObject);
         }
         slottedDie = null;
+    }
+
+    public DieLogic GetSlottedDie()
+    {
+        return slottedDie;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
+public enum E_Resource { FOOD, WATER, HEALTH, WOOD }
 
 public class PlayerResourceManager : MonoBehaviour
 {
@@ -19,6 +22,11 @@ public class PlayerResourceManager : MonoBehaviour
     public int StartingHealth = 20;
     public Image HealthFill = null;
     int health = 0;
+
+    public int MaxWood = 5;
+    public int StartingWood = 0;
+    public TextMeshProUGUI WoodText = null;
+    int wood = 0;
 
     private void Awake()
     {
@@ -40,11 +48,21 @@ public class PlayerResourceManager : MonoBehaviour
         UpdateImageFill(FoodFill, food, MaxFood);
         health = StartingHealth;
         UpdateImageFill(HealthFill, health, MaxHealth);
+        wood = StartingWood;
+        UpdateWoodText();
     }
 
     void UpdateImageFill(Image img, int amount, int max)
     {
         img.fillAmount = (float)amount / max;
+    }
+
+    void UpdateWoodText()
+    {
+        if (WoodText)
+        {
+            WoodText.text = wood.ToString();
+        }
     }
 
     public void ChangeWater(int change)
@@ -55,6 +73,7 @@ public class PlayerResourceManager : MonoBehaviour
 
         }
         water = Mathf.Clamp(water, 0, MaxWater);
+        UpdateImageFill(WaterFill, water, MaxWater);
     }
     
     public int GetWater()
@@ -70,6 +89,7 @@ public class PlayerResourceManager : MonoBehaviour
             
         }
         food = Mathf.Clamp(food, 0, MaxFood);
+        UpdateImageFill(FoodFill, food, MaxFood);
     }
 
     public int GetFood()
@@ -79,10 +99,66 @@ public class PlayerResourceManager : MonoBehaviour
 
     public void ChangeHealth(int change)
     {
+        Debug.Log(change);
+
         health += change;
         if (health <= 0)
         {
             //dead
+        }
+        health = Mathf.Clamp(health, 0, MaxHealth);
+        UpdateImageFill(HealthFill, health, MaxHealth);
+    }
+
+    public int GetHealth()
+    {
+        return health;
+    }
+
+    public void ChangeWood(int change)
+    {
+        wood = Mathf.Clamp(wood + change, 0, MaxWood);
+        UpdateWoodText();
+    }
+
+    public int GetWood()
+    {
+        return wood;
+    }
+
+    public int GetResource(E_Resource resource)
+    {
+        switch (resource)
+        {
+            case E_Resource.FOOD:
+                return GetFood();
+            case E_Resource.WATER:
+                return GetWater();
+            case E_Resource.HEALTH:
+                return GetHealth();
+            case E_Resource.WOOD:
+                return GetWood();
+        }
+
+        return 0;
+    }
+
+    public void ChangeResource(E_Resource resource, int change)
+    {
+        switch (resource)
+        {
+            case E_Resource.FOOD:
+                ChangeFood(change);
+                break;
+            case E_Resource.WATER:
+                ChangeWater(change);
+                break;
+            case E_Resource.HEALTH:
+                ChangeHealth(change);
+                break;
+            case E_Resource.WOOD:
+                ChangeWood(change);
+                break;
         }
     }
 }

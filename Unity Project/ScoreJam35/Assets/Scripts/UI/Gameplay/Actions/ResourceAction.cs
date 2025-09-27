@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class ResourceAction : MonoBehaviour
+public class ResourceAction : BaseDiceAction
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public E_Resource ResourceToChange = E_Resource.FOOD;
+    public float DieValueMultiplier = 1;
+    public int ExtraFlatValue = 0;
 
-    // Update is called once per frame
-    void Update()
+    public override void PerformDiceValueAction(int totalValue)
     {
-        
+        PlayerResourceManager.Instance.ChangeResource(ResourceToChange, (int)(totalValue * DieValueMultiplier) + ExtraFlatValue);
     }
 }
