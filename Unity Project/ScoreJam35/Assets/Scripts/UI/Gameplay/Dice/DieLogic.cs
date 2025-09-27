@@ -34,7 +34,8 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             {
                 dragging = false;
                 ClickedDieParent.Instance.SetCurrentDie(null);
-                DiceManager.Instance.ReAddDie(gameObject);
+                AttemptPlayDie();
+                
                 // try to apply to colliding die slot?
             }
         }
@@ -46,6 +47,25 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 ClickedDieParent.Instance.SetCurrentDie(transform);
             }
         }
+    }
+
+    void AttemptPlayDie()
+    {
+        if (ClickedDieParent.Instance.hoveredDieSlot == null)
+        {
+            DiceManager.Instance.ReAddDie(gameObject);
+            return;
+        }
+
+        // If we get into this if statement, we've played the die
+        if(ClickedDieParent.Instance.hoveredDieSlot.AttemptApplyDie(this))
+        {
+            ClickedDieParent.Instance.SetCurrentDie(null);
+            Destroy(gameObject);
+            return;
+        }
+
+        DiceManager.Instance.ReAddDie(gameObject);
     }
 
     public void OnPointerEnter(PointerEventData data)
