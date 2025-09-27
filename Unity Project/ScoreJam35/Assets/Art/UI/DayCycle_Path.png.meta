@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: cfe5d95b52a1149458edd5880b0c8672
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1610938408488769752
+    second: DayCycle_Path_0
+  - first:
+      213: 31085928912695622
+    second: DayCycle_Path_1
+  - first:
+      213: 5653232461601514977
+    second: DayCycle_Path_2
+  - first:
+      213: -2650071686665919867
+    second: DayCycle_Path_3
+  - first:
+      213: -5696096985702650826
+    second: DayCycle_Path_4
+  - first:
+      213: -8796979115609747132
+    second: DayCycle_Path_5
+  - first:
+      213: -562049971495645079
+    second: DayCycle_Path_6
+  - first:
+      213: -3224970056632495439
+    second: DayCycle_Path_7
+  - first:
+      213: 8210130624773457202
+    second: DayCycle_Path_8
+  - first:
+      213: 5914250759651397956
+    second: DayCycle_Path_9
+  - first:
+      213: -7904646064759412859
+    second: DayCycle_Path_10
+  - first:
+      213: -2418486454322862607
+    second: DayCycle_Path_11
+  - first:
+      213: 7538509863243973974
+    second: DayCycle_Path_12
+  - first:
+      213: -7989509809943346008
+    second: DayCycle_Path_13
+  - first:
+      213: -6332245602022426774
+    second: DayCycle_Path_14
+  - first:
+      213: -7756874630147925147
+    second: DayCycle_Path_15
+  - first:
+      213: 8025178320890437114
+    second: DayCycle_Path_16
+  - first:
+      213: 1633646042249482323
+    second: DayCycle_Path_17
+  - first:
+      213: -165969297656346946
+    second: DayCycle_Path_18
+  - first:
+      213: -976030266521070413
+    second: DayCycle_Path_19
+  - first:
+      213: 4221331952011855003
+    second: DayCycle_Path_20
+  - first:
+      213: 6243316356023600251
+    second: DayCycle_Path_21
+  - first:
+      213: 7570509063752685083
+    second: DayCycle_Path_22
+  - first:
+      213: 4546761067377733399
+    second: DayCycle_Path_23
+  - first:
+      213: 7165937974224231136
+    second: DayCycle_Path_24
+  - first:
+      213: -2347487138401479626
+    second: DayCycle_Path_25
+  - first:
+      213: 6456438398664600495
+    second: DayCycle_Path_26
+  - first:
+      213: 7668534090509568342
+    second: DayCycle_Path_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DayCycle_Path_0
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 163
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8910982f33b5610800000000000000
+      internalID: 1610938408488769752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 167
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641ba56dc707e6000800000000000000
+      internalID: 31085928912695622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 170
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e52772c8f0547e40800000000000000
+      internalID: 5653232461601514977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 170
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58225f677dd093bd0800000000000000
+      internalID: -2650071686665919867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 167
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c250188f563f0b0800000000000000
+      internalID: -5696096985702650826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 163
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4411d8d4a1adae580800000000000000
+      internalID: -8796979115609747132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 147
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960dbfe57823338f0800000000000000
+      internalID: -562049971495645079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 156
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b21623f1da9e33d0800000000000000
+      internalID: -3224970056632495439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_8
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 156
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2358d29dd4e30f170800000000000000
+      internalID: 8210130624773457202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 147
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4411b991bb3a31250800000000000000
+      internalID: 5914250759651397956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 136
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58763d2e84e0d4290800000000000000
+      internalID: -7904646064759412859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 137
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5edfb226fcf6ed0800000000000000
+      internalID: -2418486454322862607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 124
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6558f66a7ca2e9860800000000000000
+      internalID: 7538509863243973974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_13
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 124
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a404d8782f8f1190800000000000000
+      internalID: -7989509809943346008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 109
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a677ce4bc285f18a0800000000000000
+      internalID: -6332245602022426774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 109
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b1bce1f9b0a5490800000000000000
+      internalID: -7756874630147925147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_16
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 94
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd17d3e9292f5f60800000000000000
+      internalID: 8025178320890437114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_17
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 93
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350d0058b60eba610800000000000000
+      internalID: 1633646042249482323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 77
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb682999dcb52bdf0800000000000000
+      internalID: -165969297656346946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_19
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 76
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b45bf1d4a17472f0800000000000000
+      internalID: -976030266521070413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 58
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b944ca67b0f259a30800000000000000
+      internalID: 4221331952011855003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_21
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 58
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b744c25b527b4a650800000000000000
+      internalID: 6243316356023600251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 40
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b169ad912e9df0960800000000000000
+      internalID: 7570509063752685083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_23
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 40
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f20abd917591f30800000000000000
+      internalID: 4546761067377733399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 20
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea1e1cee96827360800000000000000
+      internalID: 7165937974224231136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_25
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 20
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63418c892ec0c6fd0800000000000000
+      internalID: -2347487138401479626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab68921480e99950800000000000000
+      internalID: 6456438398664600495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DayCycle_Path_27
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659cbcc202b1c6a60800000000000000
+      internalID: 7668534090509568342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DayCycle_Path_0: 1610938408488769752
+      DayCycle_Path_1: 31085928912695622
+      DayCycle_Path_10: -7904646064759412859
+      DayCycle_Path_11: -2418486454322862607
+      DayCycle_Path_12: 7538509863243973974
+      DayCycle_Path_13: -7989509809943346008
+      DayCycle_Path_14: -6332245602022426774
+      DayCycle_Path_15: -7756874630147925147
+      DayCycle_Path_16: 8025178320890437114
+      DayCycle_Path_17: 1633646042249482323
+      DayCycle_Path_18: -165969297656346946
+      DayCycle_Path_19: -976030266521070413
+      DayCycle_Path_2: 5653232461601514977
+      DayCycle_Path_20: 4221331952011855003
+      DayCycle_Path_21: 6243316356023600251
+      DayCycle_Path_22: 7570509063752685083
+      DayCycle_Path_23: 4546761067377733399
+      DayCycle_Path_24: 7165937974224231136
+      DayCycle_Path_25: -2347487138401479626
+      DayCycle_Path_26: 6456438398664600495
+      DayCycle_Path_27: 7668534090509568342
+      DayCycle_Path_3: -2650071686665919867
+      DayCycle_Path_4: -5696096985702650826
+      DayCycle_Path_5: -8796979115609747132
+      DayCycle_Path_6: -562049971495645079
+      DayCycle_Path_7: -3224970056632495439
+      DayCycle_Path_8: 8210130624773457202
+      DayCycle_Path_9: 5914250759651397956
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
