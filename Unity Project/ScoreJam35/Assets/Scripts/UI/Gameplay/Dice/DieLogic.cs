@@ -13,6 +13,7 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public bool Draggable = true;
     bool dragging = false;
     bool mouseOver = false;
+    BaseDieSlot currentSlot = null;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,14 +36,18 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 dragging = false;
                 ClickedDieParent.Instance.SetCurrentDie(null);
                 AttemptPlayDie();
-                
-                // try to apply to colliding die slot?
             }
         }
         else if (mouseOver)
         {
             if(Mouse.current.leftButton.wasPressedThisFrame)
             {
+                if (currentSlot != null)
+                {
+                    currentSlot.UnslotDie();
+                    currentSlot = null;
+                }
+
                 dragging = true;
                 ClickedDieParent.Instance.SetCurrentDie(transform);
             }
@@ -61,7 +66,8 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if(ClickedDieParent.Instance.hoveredDieSlot.AttemptApplyDie(this))
         {
             ClickedDieParent.Instance.SetCurrentDie(null);
-            Destroy(gameObject);
+            ClickedDieParent.Instance.hoveredDieSlot.SlotDie(this);
+            currentSlot = ClickedDieParent.Instance.hoveredDieSlot;
             return;
         }
 

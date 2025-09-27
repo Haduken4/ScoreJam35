@@ -4,10 +4,14 @@ using UnityEngine.InputSystem;
 
 public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    public SlotGroup ActionSlotGroup = null;
+
     public float RectScale = 1.0f;
 
     bool hovered = false;
     RectTransform rectTransform;
+
+    DieLogic slottedDie = null;
 
     void Awake()
     {
@@ -58,6 +62,30 @@ public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointe
         }
 
         return true;
+    }
+
+    public void SlotDie(DieLogic die)
+    {
+        slottedDie = die;
+        slottedDie.transform.SetParent(transform);
+        slottedDie.transform.localPosition = Vector3.zero;
+
+        // slot into our group
+        ActionSlotGroup.FillSlot(die.CurrentValue, this);
+        if (ActionSlotGroup.AllSlotsFilled())
+        {
+            ActionSlotGroup.PerformAction();
+        }
+    }
+
+    public void UnslotDie(bool destroyDie = false)
+    {
+        ActionSlotGroup.EmptySlot(slottedDie.CurrentValue, this);
+        if (destroyDie)
+        {
+            Destroy(slottedDie.gameObject);
+        }
+        slottedDie = null;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

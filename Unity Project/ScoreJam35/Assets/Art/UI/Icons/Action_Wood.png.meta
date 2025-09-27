@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: fc953e6eaa83fd04abcd4ab03615ce69
+guid: a6dd932b8f7df2d4d9bde3428f8cb1bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1559704157218881296
-    second: tools_0
+      213: -6731500668005136523
+    second: Action_Wood_0
   - first:
-      213: 8699069900992395679
-    second: tools_1
+      213: -1928887424542403234
+    second: Action_Wood_1
+  - first:
+      213: -718702077207058221
+    second: Action_Wood_2
+  - first:
+      213: -4014377407067375549
+    second: Action_Wood_3
+  - first:
+      213: -8075648578178730751
+    second: Action_Wood_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,19 +109,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -129,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tools_0
+      name: Action_Wood_0
       rect:
         serializedVersion: 2
-        x: 104
-        y: 55
-        width: 164
-        height: 357
+        x: 0
+        y: 15
+        width: 54
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01f3bb5daae25a510800000000000000
-      internalID: 1559704157218881296
+      spriteID: 577cf36bec7e492a0800000000000000
+      internalID: -6731500668005136523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tools_1
+      name: Action_Wood_1
       rect:
         serializedVersion: 2
-        x: 262
-        y: 64
-        width: 119
-        height: 381
+        x: 27
+        y: 62
+        width: 64
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +162,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f99b1fc3cfd49b870800000000000000
-      internalID: 8699069900992395679
+      spriteID: e559e686b173b35e0800000000000000
+      internalID: -1928887424542403234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Wood_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 74
+        width: 107
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8ecb4c448a606f0800000000000000
+      internalID: -718702077207058221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Wood_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 14
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348356174011a48c0800000000000000
+      internalID: -4014377407067375549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Wood_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 7
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105b4ce97688def80800000000000000
+      internalID: -8075648578178730751
       vertices: []
       indices: 
       edges: []
@@ -186,8 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tools_0: 1559704157218881296
-      tools_1: 8699069900992395679
+      Action_Wood_0: -6731500668005136523
+      Action_Wood_1: -1928887424542403234
+      Action_Wood_2: -718702077207058221
+      Action_Wood_3: -4014377407067375549
+      Action_Wood_4: -8075648578178730751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

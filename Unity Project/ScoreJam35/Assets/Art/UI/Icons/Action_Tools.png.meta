@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 4836b9c6d22c2404fa45fb19aef64221
+guid: 130a6952923e7ab46b6d0c8f766ed4d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7357319089473178556
-    second: nap_0
+      213: -5975590150739245585
+    second: Action_Tools_0
+  - first:
+      213: -4512266987780128678
+    second: Action_Tools_1
+  - first:
+      213: -623099743851780256
+    second: Action_Tools_2
+  - first:
+      213: 3302266356567085591
+    second: Action_Tools_3
+  - first:
+      213: -5002594600364310139
+    second: Action_Tools_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +109,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nap_0
+      name: Action_Tools_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 66
-        width: 426
-        height: 319
+        x: 0
+        y: 111
+        width: 102
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44430c4d44d85e990800000000000000
-      internalID: -7357319089473178556
+      spriteID: fe54dddfa60721da0800000000000000
+      internalID: -5975590150739245585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Tools_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 104
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50c4a5e4153161c0800000000000000
+      internalID: -4512266987780128678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Tools_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 81
+        width: 102
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067e314951e4a57f0800000000000000
+      internalID: -623099743851780256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Tools_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 13
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71297e051c104dd20800000000000000
+      internalID: 3302266356567085591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Tools_4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 12
+        width: 66
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5818ff147b6339ab0800000000000000
+      internalID: -5002594600364310139
       vertices: []
       indices: 
       edges: []
@@ -161,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nap_0: -7357319089473178556
+      Action_Tools_0: -5975590150739245585
+      Action_Tools_1: -4512266987780128678
+      Action_Tools_2: -623099743851780256
+      Action_Tools_3: 3302266356567085591
+      Action_Tools_4: -5002594600364310139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

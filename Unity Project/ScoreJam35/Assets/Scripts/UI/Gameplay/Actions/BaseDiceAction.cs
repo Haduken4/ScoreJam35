@@ -1,16 +1,8 @@
 using UnityEngine;
 
-public class BaseDiceAction : MonoBehaviour
+public abstract class BaseDiceAction : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public virtual void PerformDiceValueAction(int totalValue)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

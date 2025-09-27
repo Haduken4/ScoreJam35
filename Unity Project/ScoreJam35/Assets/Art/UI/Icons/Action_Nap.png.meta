@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2d80af2b3475c1741adc9eb0f185eb2c
+guid: a18afa1d9520cef4d869af2be3fdcaff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8674773607252223138
-    second: hunting_0
+      213: -7301364654388985469
+    second: Action_Nap_0
+  - first:
+      213: -8775091641952531319
+    second: Action_Nap_1
+  - first:
+      213: 7208255966082087108
+    second: Action_Nap_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +103,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hunting_0
+      name: Action_Nap_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 81
-        width: 369
-        height: 321
+        x: 14
+        y: 32
+        width: 88
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a4e33782acf26870800000000000000
-      internalID: 8674773607252223138
+      spriteID: 3814d87f7875caa90800000000000000
+      internalID: -7301364654388985469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Nap_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 80
+        width: 107
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c8be1e4ac983680800000000000000
+      internalID: -8775091641952531319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Nap_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8b9643c9ed80460800000000000000
+      internalID: 7208255966082087108
       vertices: []
       indices: 
       edges: []
@@ -161,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      hunting_0: 8674773607252223138
+      Action_Nap_0: -7301364654388985469
+      Action_Nap_1: -8775091641952531319
+      Action_Nap_2: 7208255966082087108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

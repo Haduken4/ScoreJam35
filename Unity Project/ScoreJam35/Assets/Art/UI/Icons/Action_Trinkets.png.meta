@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: fb307ea4d1330904baf71d728f900500
+guid: cc33011e18374c347a1ca91b1f23bb02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2954740850058057362
-    second: fishing_0
+      213: 1673231708021519728
+    second: Action_Trinkets_0
+  - first:
+      213: -3587674744069281028
+    second: Action_Trinkets_1
+  - first:
+      213: 7775451598324415816
+    second: Action_Trinkets_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +103,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fishing_0
+      name: Action_Trinkets_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 93
-        width: 426
-        height: 314
+        x: 33
+        y: 11
+        width: 145
+        height: 178
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 296db03f529510920800000000000000
-      internalID: 2954740850058057362
+      spriteID: 075fa8f8f53883710800000000000000
+      internalID: 1673231708021519728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Trinkets_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 101
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa2c1e14d4063ec0800000000000000
+      internalID: -3587674744069281028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_Trinkets_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84dbe565804f7eb60800000000000000
+      internalID: 7775451598324415816
       vertices: []
       indices: 
       edges: []
@@ -161,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fishing_0: 2954740850058057362
+      Action_Trinkets_0: 1673231708021519728
+      Action_Trinkets_1: -3587674744069281028
+      Action_Trinkets_2: 7775451598324415816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
