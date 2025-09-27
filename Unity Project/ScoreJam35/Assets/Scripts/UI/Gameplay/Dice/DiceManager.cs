@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class DiceManager : MonoBehaviour
@@ -37,7 +38,16 @@ public class DiceManager : MonoBehaviour
 
     void UpdateDicePos()
     {
+        for(int i = 0; i < dice.Count; ++i)
+        {
+            Vector3 correctPos = DiceStartPos + (Vector2.right * DiceXSpacing * i);
+            correctPos.y = InPlayYPos;
+            correctPos.z = DiceZ;
 
+            Vector3 diePos = dice[i].position;
+            diePos = Vector3.Lerp(diePos, correctPos, DiceLerpSpeed * Time.deltaTime);
+            dice[i].position = diePos;
+        }
     }
 
     void UpdateDicePosInPlay()
@@ -52,6 +62,9 @@ public class DiceManager : MonoBehaviour
         foreach (Transform die in dice)
         {
             float currY = Mathf.Lerp(DiceStartPos.y, InPlayYPos, 1.0f - (timer / InPlayTime));
+            Vector3 diePos = die.position;
+            diePos.y = currY;
+            die.position = diePos;
         }
     }
 
