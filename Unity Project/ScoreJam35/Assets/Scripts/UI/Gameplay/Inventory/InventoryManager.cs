@@ -6,16 +6,14 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
 
-    public List<Transform> TrinketSlots = new List<Transform>();
-    public List<Transform> ToolSlots = new List<Transform>();
+    public List<Transform> InventorySlots = new List<Transform>();
 
     public List<GameObject> TrinketPrefabs = new List<GameObject>();
     public List<GameObject> ToolPrefabs = new List<GameObject>();
 
     public TooltipPopup TooltipParent = null;
 
-    int trinkets = 0;
-    int tools = 0;
+    int items = 0;
 
     private void Awake()
     {
@@ -38,13 +36,13 @@ public class InventoryManager : MonoBehaviour
 
         int prefabIndex = Random.Range(0, TrinketPrefabs.Count);
 
-        GameObject trinket = Instantiate(TrinketPrefabs[prefabIndex], TrinketSlots[trinkets].position, Quaternion.identity, TrinketSlots[trinkets]);
+        GameObject trinket = Instantiate(TrinketPrefabs[prefabIndex], InventorySlots[items].position, Quaternion.identity, InventorySlots[items]);
         BaseItem item = trinket.GetComponent<BaseItem>();
-        item.MySlot = TrinketSlots[trinkets];
+        item.MySlot = InventorySlots[items];
 
         SetupTooltip(item.Title, item.Description, item.ItemIcon);
 
-        ++trinkets;
+        ++items;
         TrinketPrefabs.RemoveAt(prefabIndex);
     }
 
@@ -58,13 +56,13 @@ public class InventoryManager : MonoBehaviour
 
         int prefabIndex = Random.Range(0, ToolPrefabs.Count);
 
-        GameObject tool = Instantiate(ToolPrefabs[prefabIndex], ToolSlots[tools].position, Quaternion.identity, ToolSlots[tools]);
+        GameObject tool = Instantiate(ToolPrefabs[prefabIndex], InventorySlots[items].position, Quaternion.identity, InventorySlots[items]);
         BaseItem item = tool.GetComponent<BaseItem>();
-        item.MySlot = ToolSlots[tools];
+        item.MySlot = InventorySlots[items];
 
         SetupTooltip(item.Title, item.Description, item.ItemIcon);
 
-        ++tools;
+        ++items;
         ToolPrefabs.RemoveAt(prefabIndex);
     }
 
@@ -81,6 +79,8 @@ public class InventoryManager : MonoBehaviour
         {
             return;
         }
+
+        TooltipParent.gameObject.SetActive(true);
 
         TooltipParent.TitleText.text = title;
         TooltipParent.DescriptionText.text = description;
