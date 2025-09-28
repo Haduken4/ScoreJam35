@@ -19,8 +19,8 @@ public class TurnManager : MonoBehaviour
     public GameObject NightTimeActionsParent;
 
     [Header("Special Events")]
-    public List<GameObject> SpecialEventParents = new List<GameObject>();
-    public GameObject SpecialEventPopup = null;
+    public List<SpecialEventInfo> SpecialEventParents = new List<SpecialEventInfo>();
+    public SpecialEventPopup EventPopup = null;
     public Vector2Int FirstEventTurnRange = new Vector2Int(6, 8);
     public Vector2Int TurnsBetweenEventsRange = new Vector2Int(3, 5);
 
@@ -97,6 +97,14 @@ public class TurnManager : MonoBehaviour
             {
                 eventToTrigger = UnityEngine.Random.Range(0, SpecialEventParents.Count);
             }
+            lastEvent = eventToTrigger;
+
+            EventPopup.gameObject.SetActive(true);
+            SpecialEventInfo info = SpecialEventParents[eventToTrigger];
+            EventPopup.EventToEnable = info.gameObject;
+            EventPopup.TitleText.text = info.Title;
+            EventPopup.DescriptionText.text = info.Description;
+            EventPopup.IconImage.sprite = info.Icon;
 
             turnsUntilEvent = UnityEngine.Random.Range(TurnsBetweenEventsRange.x, TurnsBetweenEventsRange.y + 1);
         }
@@ -185,9 +193,9 @@ public class TurnManager : MonoBehaviour
 
     public bool AnySpecialEventActive()
     {
-        foreach(GameObject specialEvent in SpecialEventParents)
+        foreach(SpecialEventInfo specialEvent in SpecialEventParents)
         {
-            if (specialEvent.activeSelf)
+            if (specialEvent.gameObject.activeSelf)
             {
                 return true;
             }
