@@ -631,7 +631,7 @@ MonoBehaviour:
   Title: Island Curse
   Description: The island curse sets in, increasing your food and water cost per
     turn by 2
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a6b689d482e10794cb6d1f620b57c064, type: 3}
 --- !u!1 &269240140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,6 +1982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoarEventAction
       objectReference: {fileID: 0}
+    - target: {fileID: 2114767363966764858, guid: 183ac59aab4c493459cc26dcfc3c7a85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3023225435262669424, guid: 183ac59aab4c493459cc26dcfc3c7a85, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2078,6 +2082,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8076795889575306338, guid: 183ac59aab4c493459cc26dcfc3c7a85, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1a7a5751a1a9f4847961d4b73f4d0c19, type: 3}
     - target: {fileID: 9031491769947409615, guid: 183ac59aab4c493459cc26dcfc3c7a85, type: 3}
       propertyPath: m_text
       value: Deals 2 damage to you per turn
@@ -2221,7 +2229,7 @@ MonoBehaviour:
   Title: Thunderstorm
   Description: A thunderstorm settles on the island, preventing you from napping
     or starting fires
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 346b9a863515ba74d9c948cb5f8fcf5f, type: 3}
 --- !u!1001 &910654033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3017,6 +3025,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5452309931630363558, guid: a99a958cd23a1204aa198b8e0dd6495f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 346b9a863515ba74d9c948cb5f8fcf5f, type: 3}
     - target: {fileID: 5486562437035843436, guid: a99a958cd23a1204aa198b8e0dd6495f, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -4487,7 +4499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Angry Boar Attack
   Description: An angry boar attacks you, dealing 2 damage per turn until defeated
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1a7a5751a1a9f4847961d4b73f4d0c19, type: 3}
 --- !u!1 &1426398170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4799,6 +4811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IslandCurseEventAction
       objectReference: {fileID: 0}
+    - target: {fileID: 1860532537901633345, guid: 130b020252fefd34d9407ceae47331f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a6b689d482e10794cb6d1f620b57c064, type: 3}
     - target: {fileID: 3196896426407742472, guid: 130b020252fefd34d9407ceae47331f9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6166,7 +6182,7 @@ MonoBehaviour:
   - {fileID: 1404272378}
   - {fileID: 245111114}
   EventPopup: {fileID: 1515475436}
-  FirstEventTurnRange: {x: 6, y: 8}
+  FirstEventTurnRange: {x: 2, y: 2}
   TurnsBetweenEventsRange: {x: 4, y: 6}
   FoodCostPerTurn: 4
   WaterCostPerTurn: 4
