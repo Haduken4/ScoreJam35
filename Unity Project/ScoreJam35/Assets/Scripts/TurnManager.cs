@@ -10,6 +10,8 @@ public class TurnManager : MonoBehaviour
     public event Action OnStartOfTurn;
     public event Action OnStartDay;
     public event Action OnStartNight;
+    public event Action OnStartedRaining;
+    public event Action OnFinishedRaining;
 
     public DiceManager DiceHandManager = null;
 
@@ -202,5 +204,25 @@ public class TurnManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void InvokeStartRaining()
+    {
+        OnStartedRaining?.Invoke();
+    }
+
+    public void InvokeEndRaining()
+    {
+        OnFinishedRaining?.Invoke();
+    }
+
+    public int GetCurrentDay()
+    {
+        return (turn / 2) + 1;
+    }
+
+    public bool IsCurrentlyDay()
+    {
+        return turn % 2 == 0;
     }
 }

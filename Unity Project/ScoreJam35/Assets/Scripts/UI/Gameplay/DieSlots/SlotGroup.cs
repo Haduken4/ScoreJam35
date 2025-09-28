@@ -21,6 +21,7 @@ public class SlotGroup : MonoBehaviour
     public bool Useable = true;
 
     public bool InactiveDuringRain = false;
+    public bool ActiveDuringDay = false;
 
     List<BaseDieSlot> slots = new List<BaseDieSlot>();
     int totalDieValue = 0;
@@ -29,18 +30,65 @@ public class SlotGroup : MonoBehaviour
     bool scaling = false;
     bool unslotDieOnScale = false;
     bool disableOnScale = false;
+    bool didntInitRain = false;
     Vector3 targetScale = Vector3.zero;
     Vector3 startScale = Vector3.zero;
+
+    private void Awake()
+    {
+        if (InactiveDuringRain)
+        {
+            if (TurnManager.Instance == null)
+            {
+                didntInitRain = true;
+                return;
+            }
+
+            TurnManager.Instance.OnStartedRaining += RainStarted;
+            TurnManager.Instance.OnFinishedRaining += RainFinished;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (InactiveDuringRain)
+        {
+            TurnManager.Instance.OnStartedRaining -= RainStarted;
+            TurnManager.Instance.OnFinishedRaining -= RainFinished;
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (InactiveDuringRain && didntInitRain)
+        {
+            TurnManager.Instance.OnStartedRaining += RainStarted;
+            TurnManager.Instance.OnFinishedRaining += RainFinished;
+        }
+
         totalDieValue = 0;
         currentFilledSlots = 0;
 
         if(ScaleIn)
         {
             StartScaling(Vector3.zero, BaseScale);
+        }
+    }
+
+    void RainStarted()
+    {
+        if (transform.localScale != Vector3.zero)
+        {
+            StartShrinking(true);
+        }
+    }
+
+    void RainFinished()
+    {
+        if(TurnManager.Instance.IsCurrentlyDay() == ActiveDuringDay)
+        {
+            StartScaleIn();
         }
     }
 

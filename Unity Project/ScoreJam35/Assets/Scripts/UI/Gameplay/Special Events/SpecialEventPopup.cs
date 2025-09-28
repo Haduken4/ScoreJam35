@@ -17,6 +17,11 @@ public class SpecialEventPopup : MonoBehaviour
         foreach(SlotGroup action in eventActions)
         {
             action.StartScaleIn();
+            SpecialEventTrigger trigger = action.GetComponent<SpecialEventTrigger>();
+            if (trigger != null)
+            {
+                trigger.StartEvent();
+            }
         }
     }
 }

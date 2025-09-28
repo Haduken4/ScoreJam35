@@ -1,16 +1,25 @@
+using System.Text.RegularExpressions;
 using UnityEngine;
 
-public class SpecialEventAction : MonoBehaviour
+public class SpecialEventAction : BaseDiceAction
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public bool EndsEvent = true;
+
+    SlotGroup group = null;
+    SpecialEventTrigger trigger = null;
+
+    private void Start()
     {
-        
+        group = GetComponent<SlotGroup>();
+        trigger = GetComponent<SpecialEventTrigger>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void PerformDiceValueAction(int totalValue)
     {
-        
+        if (EndsEvent)
+        {
+            trigger.EndEvent();
+            group.StartShrinking(true, true);
+        }
     }
 }
