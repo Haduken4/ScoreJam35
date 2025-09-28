@@ -94,7 +94,7 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void FlipDie()
     {
-        CurrentValue = (RollRange.y - 1) - CurrentValue;
+        CurrentValue = (RollRange.y + RollRange.x) - CurrentValue;
     }
 
     public void NullCurrentSlot()

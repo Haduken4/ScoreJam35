@@ -9,6 +9,7 @@ public class ClickedDieParent : MonoBehaviour
     public float ZPosition = 0;
 
     Transform currDie = null;
+    Transform thisFrameLastDie = null;
 
     [HideInInspector]
     public BaseDieSlot hoveredDieSlot = null;
@@ -32,8 +33,14 @@ public class ClickedDieParent : MonoBehaviour
         transform.position = pos;
     }
 
+    private void LateUpdate()
+    {
+        thisFrameLastDie = null;
+    }
+
     public void SetCurrentDie(Transform newDie)
     {
+        thisFrameLastDie = currDie;
         currDie = newDie;
         if (currDie == null)
         {
@@ -47,5 +54,10 @@ public class ClickedDieParent : MonoBehaviour
     public Transform GetCurrentDie()
     {
         return currDie;
+    }
+
+    public Transform GetThisFrameLastDie()
+    {
+        return thisFrameLastDie;
     }
 }

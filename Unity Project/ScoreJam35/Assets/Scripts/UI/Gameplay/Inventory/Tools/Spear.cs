@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Spear : BaseItem
 {
-    string NewText = "";
-    int Increase = 1;
+    public string NewText = "";
+    public int Increase = 1;
 
     public override void ActivateItem()
     {

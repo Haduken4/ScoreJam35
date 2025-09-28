@@ -112,7 +112,7 @@ MonoBehaviour:
   - {fileID: 4107693108875749152, guid: 886091ed7a8fabd478777b49ebe072f0, type: 3}
   BuffedFaceSprites:
   - {fileID: 7873040428900204393, guid: 7c5971f5d03380948be7137192309f5a, type: 3}
-  - {fileID: -3817061667464949718, guid: 2872b919c99ba33419a58756d058aa99, type: 3}
+  - {fileID: 21300000, guid: 2872b919c99ba33419a58756d058aa99, type: 3}
   - {fileID: -8598667473367407067, guid: 0715cd5c0a491e341a00d9f860e0c22c, type: 3}
   - {fileID: -7247021944470349651, guid: 852abaad1d829d249a197da35ea81aac, type: 3}
   - {fileID: -873439216656280978, guid: aafb3d758dd48f94082c49425afb3e96, type: 3}
