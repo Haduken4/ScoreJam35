@@ -34,6 +34,7 @@ public class TurnManager : MonoBehaviour
     [Header("Timing")]
     public float TimeBetweenTurns = 5;
     public float InitialTimer = 1.0f;
+    public ColorTransitionCycle DayNightColors = null;
 
     [Header("Data")]
     public bool CampfireStartedTonight = false;
@@ -66,6 +67,7 @@ public class TurnManager : MonoBehaviour
         betweenTurns = true;
         timer = InitialTimer;
         turnsUntilEvent = UnityEngine.Random.Range(FirstEventTurnRange.x, FirstEventTurnRange.y + 1);
+        DayNightColors.StartTransition(TimeBetweenTurns, DayNightColors.DaytimePoint);
     }
 
     // Update is called once per frame
@@ -182,6 +184,16 @@ public class TurnManager : MonoBehaviour
         if (!AnySpecialEventActive())
         {
             --turnsUntilEvent;
+        }
+
+        // Next turn is day
+        if (turn % 2 == 0)
+        {
+            DayNightColors.StartTransition(TimeBetweenTurns, DayNightColors.DaytimePoint);
+        }
+        else // Next turn is night
+        {
+            DayNightColors.StartTransition(TimeBetweenTurns, DayNightColors.NightTimePoint);
         }
 
         OnEndOfTurn?.Invoke();
