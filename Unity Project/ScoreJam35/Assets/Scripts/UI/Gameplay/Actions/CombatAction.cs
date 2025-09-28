@@ -44,6 +44,8 @@ public class CombatAction : BaseDiceAction
 
     public override void PerformDiceValueAction(int totalValue)
     {
+        base.PerformDiceValueAction(totalValue);
+
         health -= totalValue;
         HealthText.text = health.ToString();
 

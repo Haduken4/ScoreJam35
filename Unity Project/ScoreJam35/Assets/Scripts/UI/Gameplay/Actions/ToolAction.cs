@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class ToolAction : MonoBehaviour
+public class ToolAction : BaseDiceAction
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void PerformDiceValueAction(int totalValue)
     {
-        
-    }
+        base.PerformDiceValueAction(totalValue);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        InventoryManager.Instance.GainNewTool();
     }
 }

@@ -8,6 +8,7 @@ public class ResourceAction : BaseDiceAction
 
     public override void PerformDiceValueAction(int totalValue)
     {
+        base.PerformDiceValueAction(totalValue);
         PlayerResourceManager.Instance.ChangeResource(ResourceToChange, (int)(totalValue * DieValueMultiplier) + ExtraFlatValue);
     }
 }

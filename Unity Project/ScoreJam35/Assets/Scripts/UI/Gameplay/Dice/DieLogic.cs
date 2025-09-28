@@ -99,4 +99,9 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         currentSlot = null;
     }
+
+    public void ChangeDie(int change)
+    {
+        CurrentValue = Mathf.Clamp(CurrentValue + change, RollRange.x, RollRange.y);
+    }
 }
