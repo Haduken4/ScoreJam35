@@ -252,6 +252,95 @@ MonoBehaviour:
   DaytimePoint: 0.5
   NightTimePoint: 0.95
   Precision: 0.02
+--- !u!1001 &76198449
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7063761
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7063761
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.03213811
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03213811
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 5.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404348791704814030, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889579176667599042, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889579176667599042, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: UVModule.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889579176667599042, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: UVModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8855826797642918572, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      propertyPath: m_Name
+      value: VFX_Rain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8855826797642918572, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 76198451}
+  m_SourcePrefab: {fileID: 100100000, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+--- !u!1 &76198450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8855826797642918572, guid: d4db29f41745df541aca95fb370e0af5, type: 3}
+  m_PrefabInstance: {fileID: 76198449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &76198451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76198450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52b52c6dba16b8479b0140c6b043c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &90910165
 GameObject:
   m_ObjectHideFlags: 0
@@ -6182,7 +6271,7 @@ MonoBehaviour:
   - {fileID: 1404272378}
   - {fileID: 245111114}
   EventPopup: {fileID: 1515475436}
-  FirstEventTurnRange: {x: 2, y: 2}
+  FirstEventTurnRange: {x: 6, y: 8}
   TurnsBetweenEventsRange: {x: 4, y: 6}
   FoodCostPerTurn: 4
   WaterCostPerTurn: 4
@@ -7457,4 +7546,5 @@ SceneRoots:
   - {fileID: 1643728645}
   - {fileID: 46027812}
   - {fileID: 1279080992}
+  - {fileID: 76198449}
   - {fileID: 716989348}
