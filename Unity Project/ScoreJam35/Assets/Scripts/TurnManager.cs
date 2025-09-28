@@ -38,6 +38,7 @@ public class TurnManager : MonoBehaviour
 
     [Header("Data")]
     public bool CampfireStartedTonight = false;
+    public GameObject CampfireObject = null;
     public bool CurrentlyRaining = false;
 
     float timer = 0;
@@ -141,11 +142,13 @@ public class TurnManager : MonoBehaviour
         if(turn % 2 == 0)
         {
             OnStartDay?.Invoke();
+            CampfireObject.SetActive(false);
         }
         else
         {
             OnStartNight?.Invoke();
         }
+
     }
 
     public void OnEndTurn()
