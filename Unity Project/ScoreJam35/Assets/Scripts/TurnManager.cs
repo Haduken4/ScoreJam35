@@ -1,4 +1,4 @@
-using System.Resources;
+using System.Collections.Generic;
 using System;
 using UnityEngine;
 
@@ -10,15 +10,22 @@ public class TurnManager : MonoBehaviour
 
     public DiceManager DiceHandManager = null;
 
+    [Header("Basic Action Parents")]
     public GameObject UniversalActionsParent;
     public GameObject DaytimeActionsParent;
     public GameObject NightTimeActionsParent;
 
+    [Header("Special Events")]
+    public List<GameObject> SpecialEventPopups = new List<GameObject>();
+    public Vector2Int FirstEventTurnRange = new Vector2Int(6, 8);
+    public Vector2Int TurnsBetweenEventsRange = new Vector2Int(4, 6);
+
+    [Header("Upkeep")]
     public int FoodCostPerTurn = 4;
     public int WaterCostPerTurn = 4;
-
     public int HealthLossPerColdNight = 5;
 
+    [Header("Timing")]
     public float TimeBetweenTurns = 5;
     public float InitialTimer = 1.0f;
 
@@ -27,6 +34,7 @@ public class TurnManager : MonoBehaviour
     float timer = 0;
     bool betweenTurns = false;
     int turn = 0;
+    int turnsUntilEvent = 0;
 
     bool finished = false;
 
@@ -46,6 +54,7 @@ public class TurnManager : MonoBehaviour
     {
         betweenTurns = true;
         timer = InitialTimer;
+        turnsUntilEvent = UnityEngine.Random.Range(FirstEventTurnRange.x, FirstEventTurnRange.y + 1);
     }
 
     // Update is called once per frame
@@ -70,6 +79,12 @@ public class TurnManager : MonoBehaviour
     public void OnStartTurn()
     {
         DiceHandManager.StartTurn();
+
+        if (turnsUntilEvent <= 0)
+        {
+            // Trigger an event :)
+            turnsUntilEvent = UnityEngine.Random.Range(TurnsBetweenEventsRange.x, TurnsBetweenEventsRange.y + 1);
+        }
 
         SlotGroup[] universalActions = UniversalActionsParent.GetComponentsInChildren<SlotGroup>();
         foreach(SlotGroup action in universalActions)
@@ -125,6 +140,7 @@ public class TurnManager : MonoBehaviour
         betweenTurns = true;
         timer = TimeBetweenTurns;
         ++turn;
+        --turnsUntilEvent;
 
         OnEndOfTurn?.Invoke();
     }
