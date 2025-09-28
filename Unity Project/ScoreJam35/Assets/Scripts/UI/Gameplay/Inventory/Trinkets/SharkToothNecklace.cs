@@ -22,7 +22,17 @@ public class SharkToothNecklace : BaseItem
     {
         List<Transform> dice = DiceManager.Instance.GetDice();
 
-        DieLogic randomDie = dice[Random.Range(0, dice.Count)].GetComponent<DieLogic>();
+        if(dice.Count == 0)
+        {
+            return;
+        }
+
+        Transform dieTransform = dice[Random.Range(0, dice.Count)];
+        DieLogic randomDie = dieTransform.GetComponent<DieLogic>();
+        if (randomDie == null)
+        {
+            return;
+        }
 
         randomDie.ChangeDie(Increase);
         randomDie.GetComponent<DieFaceDisplay>().Buffed = true;

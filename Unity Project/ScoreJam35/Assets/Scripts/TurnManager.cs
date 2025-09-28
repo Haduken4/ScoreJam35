@@ -19,9 +19,10 @@ public class TurnManager : MonoBehaviour
     public GameObject NightTimeActionsParent;
 
     [Header("Special Events")]
-    public List<GameObject> SpecialEventPopups = new List<GameObject>();
+    public List<GameObject> SpecialEventParents = new List<GameObject>();
+    public GameObject SpecialEventPopup = null;
     public Vector2Int FirstEventTurnRange = new Vector2Int(6, 8);
-    public Vector2Int TurnsBetweenEventsRange = new Vector2Int(4, 6);
+    public Vector2Int TurnsBetweenEventsRange = new Vector2Int(3, 5);
 
     [Header("Upkeep")]
     public int FoodCostPerTurn = 4;
@@ -40,6 +41,7 @@ public class TurnManager : MonoBehaviour
     bool betweenTurns = false;
     int turn = 0;
     int turnsUntilEvent = 0;
+    int lastEvent = -1;
 
     bool finished = false;
 
@@ -90,6 +92,12 @@ public class TurnManager : MonoBehaviour
         if (turnsUntilEvent <= 0)
         {
             // TODO: Trigger an event :)
+            int eventToTrigger = lastEvent;
+            while (eventToTrigger == lastEvent)
+            {
+                eventToTrigger = UnityEngine.Random.Range(0, SpecialEventParents.Count);
+            }
+
             turnsUntilEvent = UnityEngine.Random.Range(TurnsBetweenEventsRange.x, TurnsBetweenEventsRange.y + 1);
         }
 
@@ -161,7 +169,10 @@ public class TurnManager : MonoBehaviour
         betweenTurns = true;
         timer = TimeBetweenTurns;
         ++turn;
-        --turnsUntilEvent;
+        if (!AnySpecialEventActive())
+        {
+            --turnsUntilEvent;
+        }
 
         OnEndOfTurn?.Invoke();
     }
@@ -170,5 +181,18 @@ public class TurnManager : MonoBehaviour
     {
         DiceHandManager.DiscardDice();
         finished = true;
+    }
+
+    public bool AnySpecialEventActive()
+    {
+        foreach(GameObject specialEvent in SpecialEventParents)
+        {
+            if (specialEvent.activeSelf)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
