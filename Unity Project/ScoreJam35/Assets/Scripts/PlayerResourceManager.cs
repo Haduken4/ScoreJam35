@@ -106,6 +106,10 @@ public class PlayerResourceManager : MonoBehaviour
         {
             //dead
             TurnManager.Instance.OnFinish();
+            if (DeathPopupParent != null)
+            {
+                DeathPopupParent.SetActive(true);
+            }
         }
         health = Mathf.Clamp(health, 0, MaxHealth);
         UpdateImageFill(HealthFill, health, MaxHealth);
