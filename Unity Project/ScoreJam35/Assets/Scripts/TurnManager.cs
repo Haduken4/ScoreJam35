@@ -1,9 +1,12 @@
 using System.Resources;
+using System;
 using UnityEngine;
 
 public class TurnManager : MonoBehaviour
 {
     public static TurnManager Instance = null;
+
+    public event Action OnEndOfTurn;
 
     public DiceManager DiceHandManager = null;
 
@@ -75,6 +78,7 @@ public class TurnManager : MonoBehaviour
             if(action.transform.localScale != action.BaseScale)
             {
                 action.StartScaleIn();
+                action.Useable = true;
             }
         }
 
@@ -84,6 +88,7 @@ public class TurnManager : MonoBehaviour
             action.UnslotAllDie();
             // Should be guaranteed shrunk alrdy
             action.StartScaleIn();
+            action.Useable = true;
         }
     }
 
@@ -120,6 +125,8 @@ public class TurnManager : MonoBehaviour
         betweenTurns = true;
         timer = TimeBetweenTurns;
         ++turn;
+
+        OnEndOfTurn?.Invoke();
     }
 
     public void OnFinish()

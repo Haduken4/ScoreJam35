@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Resources;
+using TMPro;
 using UnityEngine;
 
 public class SlotGroup : MonoBehaviour
@@ -17,12 +18,15 @@ public class SlotGroup : MonoBehaviour
     public E_Resource CostResource = E_Resource.WOOD;
     public int ResourceCost = 0;
 
+    public bool Useable = true;
+
     List<BaseDieSlot> slots = new List<BaseDieSlot>();
     int totalDieValue = 0;
     int currentFilledSlots = 0;
     float scaleTimer = 0;
     bool scaling = false;
     bool unslotDieOnScale = false;
+    bool disableOnScale = false;
     Vector3 targetScale = Vector3.zero;
     Vector3 startScale = Vector3.zero;
 
@@ -51,6 +55,10 @@ public class SlotGroup : MonoBehaviour
                 {
                     UnslotAllDie(true);
                     unslotDieOnScale = false;
+                }
+                if(disableOnScale)
+                {
+                    transform.parent.gameObject.SetActive(false);
                 }
             }
         }
@@ -88,6 +96,12 @@ public class SlotGroup : MonoBehaviour
 
             StartScaling(BaseScale, Vector3.zero);
             unslotDieOnScale = true;
+            Useable = false;
+        }
+        else
+        {
+            // Use the dice
+            UnslotAllDie(true);
         }
     }
 
@@ -105,10 +119,11 @@ public class SlotGroup : MonoBehaviour
         return scaling;
     }
 
-    public void StartShrinking(bool unslotDice)
+    public void StartShrinking(bool unslotDice, bool disable = false)
     {
         StartScaling(BaseScale, Vector3.zero);
         unslotDieOnScale = true;
+        disableOnScale = disable;
     }
 
     public void StartScaleIn()

@@ -34,7 +34,7 @@ public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointe
 
     bool CheckHovered()
     {
-        if (Mouse.current == null || ActionSlotGroup.IsScaling())
+        if (Mouse.current == null || ActionSlotGroup.IsScaling() || !ActionSlotGroup.Useable)
         {
             return false;
         }
@@ -59,7 +59,7 @@ public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointe
 
     public virtual bool AttemptApplyDie(DieLogic die)
     {
-        if (!hovered)
+        if (!hovered || !ActionSlotGroup.Useable)
         {
             return false;
         }
@@ -104,6 +104,11 @@ public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointe
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if(ActionSlotGroup.IsScaling() || !ActionSlotGroup.Useable)
+        {
+            return;
+        }
+
         hovered = true;
         ClickedDieParent.Instance.hoveredDieSlot = this;
     }
