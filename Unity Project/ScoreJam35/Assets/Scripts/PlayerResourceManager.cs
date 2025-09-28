@@ -99,8 +99,6 @@ public class PlayerResourceManager : MonoBehaviour
 
     public void ChangeHealth(int change)
     {
-        Debug.Log(change);
-
         health += change;
         if (health <= 0)
         {

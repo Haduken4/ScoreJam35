@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class SlotGroup : MonoBehaviour
 {
+    public bool ResetOnTurn = true;
+    public bool ResetOnDay = true;
     public bool ShrinkOnUse = true;
     public bool ScaleIn = true;
     public float ScaleTime = 1.0f;
@@ -43,12 +45,18 @@ public class SlotGroup : MonoBehaviour
                 scaling = false;
                 if (unslotDieOnScale)
                 {
-                    for (int i = 0; i < slots.Count;)
-                    {
-                        slots[i].UnslotDie();
-                    }
+                    UnslotAllDie(true);
+                    unslotDieOnScale = false;
                 }
             }
+        }
+    }
+
+    public void UnslotAllDie(bool destroy = true)
+    {
+        for (int i = 0; i < slots.Count;)
+        {
+            slots[i].UnslotDie(destroy);
         }
     }
 
@@ -67,6 +75,7 @@ public class SlotGroup : MonoBehaviour
             }
 
             StartScaling(BaseScale, Vector3.zero);
+            unslotDieOnScale = true;
         }
     }
 
@@ -82,6 +91,17 @@ public class SlotGroup : MonoBehaviour
     public bool IsScaling()
     {
         return scaling;
+    }
+
+    public void StartShrinking(bool unslotDice)
+    {
+        StartScaling(BaseScale, Vector3.zero);
+        unslotDieOnScale = true;
+    }
+
+    public void StartScaleIn()
+    {
+        StartScaling(Vector3.zero, BaseScale);
     }
 
     public bool AllSlotsFilled()
