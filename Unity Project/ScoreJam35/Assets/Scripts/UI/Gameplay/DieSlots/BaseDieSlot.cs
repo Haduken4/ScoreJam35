@@ -88,6 +88,12 @@ public abstract class BaseDieSlot : MonoBehaviour, IPointerEnterHandler, IPointe
         {
             Destroy(slottedDie.gameObject);
         }
+        else
+        {
+            slottedDie.NullCurrentSlot();
+            DiceManager.Instance.ReAddDie(slottedDie.gameObject);
+        }
+
         slottedDie = null;
     }
 

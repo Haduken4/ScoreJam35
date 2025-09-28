@@ -28,6 +28,8 @@ public class PlayerResourceManager : MonoBehaviour
     public TextMeshProUGUI WoodText = null;
     int wood = 0;
 
+    public GameObject DeathPopupParent = null;
+
     private void Awake()
     {
         if (Instance != null)
@@ -99,12 +101,15 @@ public class PlayerResourceManager : MonoBehaviour
 
     public void ChangeHealth(int change)
     {
-        Debug.Log(change);
-
         health += change;
         if (health <= 0)
         {
             //dead
+            TurnManager.Instance.OnFinish();
+            if (DeathPopupParent != null)
+            {
+                DeathPopupParent.SetActive(true);
+            }
         }
         health = Mathf.Clamp(health, 0, MaxHealth);
         UpdateImageFill(HealthFill, health, MaxHealth);

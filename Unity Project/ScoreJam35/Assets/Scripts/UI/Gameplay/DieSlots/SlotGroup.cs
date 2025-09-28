@@ -1,8 +1,11 @@
 using System.Collections.Generic;
+using System.Resources;
 using UnityEngine;
 
 public class SlotGroup : MonoBehaviour
 {
+    public bool ResetOnTurn = true;
+    public bool ResetOnDay = true;
     public bool ShrinkOnUse = true;
     public bool ScaleIn = true;
     public float ScaleTime = 1.0f;
@@ -10,6 +13,9 @@ public class SlotGroup : MonoBehaviour
 
     public List<BaseDiceAction> ActionsOnFilled = new List<BaseDiceAction>();
     public int SlotCount = 1;
+
+    public E_Resource CostResource = E_Resource.WOOD;
+    public int ResourceCost = 0;
 
     List<BaseDieSlot> slots = new List<BaseDieSlot>();
     int totalDieValue = 0;
@@ -43,17 +49,31 @@ public class SlotGroup : MonoBehaviour
                 scaling = false;
                 if (unslotDieOnScale)
                 {
-                    for (int i = 0; i < slots.Count;)
-                    {
-                        slots[i].UnslotDie();
-                    }
+                    UnslotAllDie(true);
+                    unslotDieOnScale = false;
                 }
             }
         }
     }
 
+    public void UnslotAllDie(bool destroy = true)
+    {
+        for (int i = 0; i < slots.Count;)
+        {
+            slots[i].UnslotDie(destroy);
+        }
+    }
+
     public void PerformAction()
     {
+        if (PlayerResourceManager.Instance.GetResource(CostResource) < ResourceCost)
+        {
+            UnslotAllDie(false);
+            return;
+        }
+
+        PlayerResourceManager.Instance.ChangeResource(CostResource, -ResourceCost);
+
         foreach (BaseDiceAction action in ActionsOnFilled)
         {
             action.PerformDiceValueAction(totalDieValue);
@@ -67,6 +87,7 @@ public class SlotGroup : MonoBehaviour
             }
 
             StartScaling(BaseScale, Vector3.zero);
+            unslotDieOnScale = true;
         }
     }
 
@@ -82,6 +103,17 @@ public class SlotGroup : MonoBehaviour
     public bool IsScaling()
     {
         return scaling;
+    }
+
+    public void StartShrinking(bool unslotDice)
+    {
+        StartScaling(BaseScale, Vector3.zero);
+        unslotDieOnScale = true;
+    }
+
+    public void StartScaleIn()
+    {
+        StartScaling(Vector3.zero, BaseScale);
     }
 
     public bool AllSlotsFilled()
