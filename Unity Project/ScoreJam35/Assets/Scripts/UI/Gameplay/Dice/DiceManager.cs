@@ -1,10 +1,12 @@
+using System;
 using System.Collections.Generic;
-using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class DiceManager : MonoBehaviour
 {
     public static DiceManager Instance { get; private set; } = null;
+
+    public event Action OnDiceInPlay;
 
     public int DicePerTurn = 4;
     public GameObject DicePrefab = null;
@@ -35,7 +37,7 @@ public class DiceManager : MonoBehaviour
     {
         VerifyDice();
 
-        if (gettingInPlay)
+        if (!gettingInPlay)
         {
             UpdateDicePos();
         }
@@ -80,6 +82,7 @@ public class DiceManager : MonoBehaviour
         {
             timer = 0;
             gettingInPlay = false;
+            OnDiceInPlay?.Invoke();
         }
 
         foreach (Transform die in dice)
@@ -133,5 +136,10 @@ public class DiceManager : MonoBehaviour
             Destroy(die.gameObject);
         }
         dice.Clear();
+    }
+
+    public List<Transform> GetDice()
+    {
+        return dice;
     }
 }

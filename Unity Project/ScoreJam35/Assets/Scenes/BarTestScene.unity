@@ -4596,7 +4596,7 @@ MonoBehaviour:
   TimeBetweenTurns: 1
   InitialTimer: 1
   CampfireStartedTonight: 0
-  CurrentlyRaining: 1
+  CurrentlyRaining: 0
 --- !u!1001 &1659731678
 PrefabInstance:
   m_ObjectHideFlags: 0

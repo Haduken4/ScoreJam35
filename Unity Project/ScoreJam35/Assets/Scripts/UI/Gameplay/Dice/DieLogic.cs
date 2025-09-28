@@ -18,6 +18,8 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        RollRange.x = Mathf.Max(RollRange.x, GlobalGameData.MinimumDieRoll);
+
         RollDie();
     }
 

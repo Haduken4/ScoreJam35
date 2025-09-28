@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class SeagullFeather : MonoBehaviour
+public class SeagullFeather : BaseItem
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    int NewMinimum = 2;
 
-    // Update is called once per frame
-    void Update()
+    public override void ActivateItem()
     {
-        
+        GlobalGameData.MinimumDieRoll = NewMinimum;
     }
 }

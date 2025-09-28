@@ -13,6 +13,8 @@ public class InventoryManager : MonoBehaviour
 
     public TooltipPopup TooltipParent = null;
 
+    public int ScoreReward = 20;
+
     int items = 0;
 
     private void Awake()
@@ -68,9 +70,10 @@ public class InventoryManager : MonoBehaviour
 
     public void GainScore(string replacementText)
     {
-        string descriptionString = $"There are no more {replacementText}! Gain 20 points instead.";
+        string descriptionString = $"There are no more {replacementText}! Gain {ScoreReward} points instead.";
 
         SetupTooltip("Gain Score", descriptionString, null);
+        GlobalGameData.Score += ScoreReward;
     }
 
     void SetupTooltip(string title, string description, Sprite icon)

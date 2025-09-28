@@ -1,16 +1,38 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class GoldenIdol : MonoBehaviour
+public class GoldenIdol : BaseItem
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int IncreaseValue = 1;
+
+    protected override void Start()
     {
-        
+        base.Start();
+        DiceManager.Instance.OnDiceInPlay += OnDiceInPlay;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void ActivateItem()
     {
-        
+        // Doesn't need to do anything
+    }
+
+    void OnDiceInPlay()
+    {
+        List<Transform> dice = DiceManager.Instance.GetDice();
+        DieLogic lowest = null;
+
+        foreach(Transform die in dice)
+        {
+            DieLogic logic = die.GetComponent<DieLogic>();
+
+            if(lowest == null || lowest.CurrentValue > logic.CurrentValue)
+            {
+                lowest = logic;
+            }
+        }
+
+        lowest.ChangeDie(IncreaseValue);
+        lowest.GetComponent<DieFaceDisplay>().Buffed = true;
+        // TODO: Play some vfx on the die
     }
 }

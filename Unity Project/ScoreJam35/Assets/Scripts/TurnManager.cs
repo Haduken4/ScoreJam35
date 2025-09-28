@@ -57,6 +57,8 @@ public class TurnManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GlobalGameData.ResetToDefault();
+
         betweenTurns = true;
         timer = InitialTimer;
         turnsUntilEvent = UnityEngine.Random.Range(FirstEventTurnRange.x, FirstEventTurnRange.y + 1);
