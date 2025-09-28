@@ -249,6 +249,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+  DaytimePoint: 0.4
+  NightTimePoint: 0.9
 --- !u!1 &203909783
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,12 +796,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1321056331845474992, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
       propertyPath: ActionsOnFilled.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1321056331845474992, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
       propertyPath: 'ActionsOnFilled.Array.data[0]'
       value: 
-      objectReference: {fileID: 822927220}
+      objectReference: {fileID: 0}
     - target: {fileID: 1640646320599729780, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
       propertyPath: m_text
       value: Start a Fire
@@ -920,7 +922,8 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 21.05
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7872184417515083192, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -930,17 +933,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5635515399956047785, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
   m_PrefabInstance: {fileID: 822927218}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &822927220 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7872184417515083192, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
-  m_PrefabInstance: {fileID: 822927218}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da9cc2854678cb34088d7910542ccad9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &838988341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,6 +2661,14 @@ PrefabInstance:
       propertyPath: ScaleIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2464402792205346149, guid: 8d920d609ff6c5f46954a8206eefbbbe, type: 3}
+      propertyPath: ActionsOnFilled.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464402792205346149, guid: 8d920d609ff6c5f46954a8206eefbbbe, type: 3}
+      propertyPath: 'ActionsOnFilled.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1638852116}
     - target: {fileID: 2721375466404938034, guid: 8d920d609ff6c5f46954a8206eefbbbe, type: 3}
       propertyPath: m_text
       value: Gain 1 wood
@@ -2734,6 +2734,17 @@ MonoBehaviour:
   ActionSlotGroup: {fileID: 1638852113}
   RectScale: 1
   AcceptableRange: {x: 4, y: 6}
+--- !u!114 &1638852116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 671795159121023100, guid: 8d920d609ff6c5f46954a8206eefbbbe, type: 3}
+  m_PrefabInstance: {fileID: 1638852110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9cc2854678cb34088d7910542ccad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1643728644
 GameObject:
   m_ObjectHideFlags: 0

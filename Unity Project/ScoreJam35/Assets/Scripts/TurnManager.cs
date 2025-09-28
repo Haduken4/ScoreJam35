@@ -1,19 +1,42 @@
+using System.Resources;
 using UnityEngine;
 
 public class TurnManager : MonoBehaviour
 {
+    public static TurnManager Instance = null;
+
     public DiceManager DiceHandManager = null;
 
     public GameObject UniversalActionsParent;
     public GameObject DaytimeActionsParent;
     public GameObject NightTimeActionsParent;
 
+    public int FoodCostPerTurn = 4;
+    public int WaterCostPerTurn = 4;
+
+    public int HealthLossPerColdNight = 5;
+
     public float TimeBetweenTurns = 5;
     public float InitialTimer = 1.0f;
+
+    public bool CampfireStartedTonight = false;
 
     float timer = 0;
     bool betweenTurns = false;
     int turn = 0;
+
+    bool finished = false;
+
+    private void Awake()
+    {
+        if(Instance != null)
+        {
+            DestroyImmediate(gameObject);
+            return;
+        }
+
+        Instance = this;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +48,11 @@ public class TurnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (finished)
+        {
+            return;
+        }
+
         if (betweenTurns)
         {
             timer -= Time.deltaTime;
@@ -61,7 +89,7 @@ public class TurnManager : MonoBehaviour
 
     public void OnEndTurn()
     {
-        if (betweenTurns)
+        if (betweenTurns || finished)
         {
             return;
         }
@@ -76,9 +104,27 @@ public class TurnManager : MonoBehaviour
             }
         }
 
+        PlayerResourceManager.Instance.ChangeFood(-FoodCostPerTurn);
+        PlayerResourceManager.Instance.ChangeWater(-WaterCostPerTurn);
+
+        if (turn % 2 == 1)
+        {
+            if (!CampfireStartedTonight)
+            {
+                PlayerResourceManager.Instance.ChangeHealth(-HealthLossPerColdNight);
+            }
+            CampfireStartedTonight = false;
+        }
+
         DiceHandManager.EndTurn();
         betweenTurns = true;
         timer = TimeBetweenTurns;
         ++turn;
+    }
+
+    public void OnFinish()
+    {
+        DiceHandManager.DiscardDice();
+        finished = true;
     }
 }
