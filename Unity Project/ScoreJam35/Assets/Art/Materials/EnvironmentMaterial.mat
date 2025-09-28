@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Environment_Art:
-        m_Texture: {fileID: 2800000, guid: ba170be4346e97a48b9c78391ecef8da, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9d7db7b2524576941a411b9ff476e9cf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -65,7 +65,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Gradient_Color: {r: 0.735849, g: 0.49069178, b: 0.14231041, a: 1}
+    - _Gradient_Color: {r: 0.35450822, g: 0.30823475, b: 0.41490272, a: 0.69803923}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

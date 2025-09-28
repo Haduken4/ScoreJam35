@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -141,8 +154,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 735
-        height: 364
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +174,10 @@ TextureImporter:
       name: Shore_1
       rect:
         serializedVersion: 2
-        x: 800
+        x: 801
         y: 0
-        width: 736
-        height: 367
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,9 +196,9 @@ TextureImporter:
       name: Shore_2
       rect:
         serializedVersion: 2
-        x: 1601
+        x: 1602
         y: 0
-        width: 734
+        width: 801
         height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,10 +218,10 @@ TextureImporter:
       name: Shore_3
       rect:
         serializedVersion: 2
-        x: 2402
+        x: 2403
         y: 0
-        width: 733
-        height: 367
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +240,10 @@ TextureImporter:
       name: Shore_4
       rect:
         serializedVersion: 2
-        x: 3203
+        x: 3204
         y: 0
-        width: 733
-        height: 367
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +262,10 @@ TextureImporter:
       name: Shore_5
       rect:
         serializedVersion: 2
-        x: 4004
+        x: 4005
         y: 0
-        width: 733
-        height: 367
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +284,10 @@ TextureImporter:
       name: Shore_6
       rect:
         serializedVersion: 2
-        x: 4805
+        x: 4806
         y: 0
-        width: 395
-        height: 226
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +306,10 @@ TextureImporter:
       name: Shore_7
       rect:
         serializedVersion: 2
-        x: 5606
+        x: 5607
         y: 0
-        width: 359
-        height: 209
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +328,10 @@ TextureImporter:
       name: Shore_8
       rect:
         serializedVersion: 2
-        x: 5612
-        y: 208
-        width: 25
-        height: 19
+        x: 6408
+        y: 0
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +350,10 @@ TextureImporter:
       name: Shore_9
       rect:
         serializedVersion: 2
-        x: 5636
-        y: 209
-        width: 24
-        height: 14
+        x: 7209
+        y: 0
+        width: 801
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,77 +368,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Shore_10
-      rect:
-        serializedVersion: 2
-        x: 5659
-        y: 165
-        width: 103
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fb3ee1ef0c70e860800000000000000
-      internalID: 7557176582384532465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore_11
-      rect:
-        serializedVersion: 2
-        x: 6407
-        y: 0
-        width: 447
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 766ffc95e6feec350800000000000000
-      internalID: 6039027407582656103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore_12
-      rect:
-        serializedVersion: 2
-        x: 7208
-        y: 0
-        width: 657
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6218ce19ddd811e20800000000000000
-      internalID: 3319590383124250918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a4beffcc1d5d8e744965d4ccae30e611
     internalID: 0
     vertices: []
     indices: 
@@ -433,13 +380,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":801.0,"y":374.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Shore_0: 3990931593738733368
       Shore_1: -3249719231435671666
-      Shore_10: 7557176582384532465
-      Shore_11: 6039027407582656103
-      Shore_12: 3319590383124250918
       Shore_2: 4997124568195902062
       Shore_3: -641465208430052666
       Shore_4: 8936686281995207991

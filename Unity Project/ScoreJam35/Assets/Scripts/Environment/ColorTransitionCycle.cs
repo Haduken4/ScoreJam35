@@ -20,8 +20,8 @@ public class ColorTransitionCycle : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         Color c = FullCycle.Evaluate(currValue);
-        sr.material.SetColor("_Gradient_Color", c);
-        sr.material.SetFloat("_Opacity", c.a);
+        sr.sharedMaterial.SetColor("_Gradient_Color", c);
+        sr.sharedMaterial.SetFloat("_Opacity", c.a);
     }
 
     // Update is called once per frame
@@ -40,8 +40,8 @@ public class ColorTransitionCycle : MonoBehaviour
             }
 
             Color c = FullCycle.Evaluate(currValue);
-            sr.material.SetColor("_Gradient_Color", c);
-            sr.material.SetFloat("_Opacity", c.a);
+            sr.sharedMaterial.SetColor("_Gradient_Color", c);
+            sr.sharedMaterial.SetFloat("_Opacity", c.a);
         }
     }
 
