@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class FirePit : MonoBehaviour
+public class FirePit : BaseItem
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void ActivateItem()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject buffedNightActions = GameObject.Find("NighttimeActionsBuffed");
+        TurnManager.Instance.NightTimeActionsParent = buffedNightActions;
     }
 }

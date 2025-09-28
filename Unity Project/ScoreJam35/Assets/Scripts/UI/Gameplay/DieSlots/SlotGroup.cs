@@ -20,6 +20,8 @@ public class SlotGroup : MonoBehaviour
 
     public bool Useable = true;
 
+    public bool InactiveDuringRain = false;
+
     List<BaseDieSlot> slots = new List<BaseDieSlot>();
     int totalDieValue = 0;
     int currentFilledSlots = 0;

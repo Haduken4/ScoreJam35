@@ -1,16 +1,32 @@
+using TMPro;
 using UnityEngine;
 
-public class Spear : MonoBehaviour
+public class Spear : BaseItem
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    string NewText = "";
+    int Increase = 1;
+
+    public override void ActivateItem()
     {
-        
+        GameObject huntingAction = GameObject.Find("GoHuntingAction");
+        GameObject fishingAction = GameObject.Find("GoFishingAction");
+
+        EditAction(huntingAction);
+        EditAction(fishingAction);
     }
 
-    // Update is called once per frame
-    void Update()
+    void EditAction(GameObject action)
     {
-        
+        action.GetComponent<ResourceAction>().ExtraFlatValue += Increase;
+
+        TextMeshProUGUI[] texts = action.GetComponentsInChildren<TextMeshProUGUI>();
+
+        foreach (TextMeshProUGUI text in texts)
+        {
+            if (text.gameObject.name == "DescriptionText")
+            {
+                text.text = NewText;
+            }
+        }
     }
 }

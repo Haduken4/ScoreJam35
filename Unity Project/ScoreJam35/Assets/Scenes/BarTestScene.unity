@@ -1261,6 +1261,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1321056331845474992, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
+      propertyPath: InactiveDuringRain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321056331845474992, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
       propertyPath: ActionsOnFilled.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1841,6 +1845,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8971436729523422690, guid: 419b40c3be9b53b4f9f11466af707041, type: 3}
       propertyPath: ResourceCost
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971436729523422690, guid: 419b40c3be9b53b4f9f11466af707041, type: 3}
+      propertyPath: InactiveDuringRain
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8971436729523422690, guid: 419b40c3be9b53b4f9f11466af707041, type: 3}
@@ -4588,6 +4596,7 @@ MonoBehaviour:
   TimeBetweenTurns: 1
   InitialTimer: 1
   CampfireStartedTonight: 0
+  CurrentlyRaining: 1
 --- !u!1001 &1659731678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4926,6 +4935,10 @@ PrefabInstance:
     - target: {fileID: 8971436729523422690, guid: 419b40c3be9b53b4f9f11466af707041, type: 3}
       propertyPath: ScaleIn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971436729523422690, guid: 419b40c3be9b53b4f9f11466af707041, type: 3}
+      propertyPath: InactiveDuringRain
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8971436729523422690, guid: 419b40c3be9b53b4f9f11466af707041, type: 3}
       propertyPath: ActionsOnFilled.Array.size

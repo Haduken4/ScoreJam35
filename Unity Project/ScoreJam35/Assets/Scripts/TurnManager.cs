@@ -7,6 +7,9 @@ public class TurnManager : MonoBehaviour
     public static TurnManager Instance = null;
 
     public event Action OnEndOfTurn;
+    public event Action OnStartOfTurn;
+    public event Action OnStartDay;
+    public event Action OnStartNight;
 
     public DiceManager DiceHandManager = null;
 
@@ -29,7 +32,9 @@ public class TurnManager : MonoBehaviour
     public float TimeBetweenTurns = 5;
     public float InitialTimer = 1.0f;
 
+    [Header("Data")]
     public bool CampfireStartedTonight = false;
+    public bool CurrentlyRaining = false;
 
     float timer = 0;
     bool betweenTurns = false;
@@ -101,9 +106,23 @@ public class TurnManager : MonoBehaviour
         foreach (SlotGroup action in timeSpecificActions)
         {
             action.UnslotAllDie();
+            if(action.InactiveDuringRain && CurrentlyRaining)
+            {
+                continue;
+            }
             // Should be guaranteed shrunk alrdy
             action.StartScaleIn();
             action.Useable = true;
+        }
+
+        OnStartOfTurn?.Invoke();
+        if(turn % 2 == 0)
+        {
+            OnStartDay?.Invoke();
+        }
+        else
+        {
+            OnStartNight?.Invoke();
         }
     }
 

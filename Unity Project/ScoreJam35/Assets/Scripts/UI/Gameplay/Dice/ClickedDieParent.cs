@@ -43,4 +43,9 @@ public class ClickedDieParent : MonoBehaviour
         currDie.SetParent(transform);
         currDie.localPosition = Vector3.zero;
     }
+
+    public Transform GetCurrentDie()
+    {
+        return currDie;
+    }
 }

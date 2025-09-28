@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class StorageChest : MonoBehaviour
+public class StorageChest : BaseItem
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int NewMaxFood = 40;
+    public int NewMaxWater = 40;
 
-    // Update is called once per frame
-    void Update()
+    public override void ActivateItem()
     {
-        
+        PlayerResourceManager.Instance.MaxFood = NewMaxFood;
+        PlayerResourceManager.Instance.MaxWater = NewMaxWater;
+        PlayerResourceManager.Instance.UpdateAllDisplays();
     }
 }
