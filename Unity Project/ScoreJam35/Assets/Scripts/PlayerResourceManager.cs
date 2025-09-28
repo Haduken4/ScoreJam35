@@ -54,6 +54,14 @@ public class PlayerResourceManager : MonoBehaviour
         UpdateWoodText();
     }
 
+    public void UpdateAllDisplays()
+    {
+        UpdateImageFill(WaterFill, water, MaxWater);
+        UpdateImageFill(FoodFill, food, MaxFood);
+        UpdateImageFill(HealthFill, health, MaxHealth);
+        UpdateWoodText();
+    }
+
     void UpdateImageFill(Image img, int amount, int max)
     {
         img.fillAmount = (float)amount / max;
