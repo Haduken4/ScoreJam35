@@ -66,8 +66,8 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if(ClickedDieParent.Instance.hoveredDieSlot.AttemptApplyDie(this))
         {
             ClickedDieParent.Instance.SetCurrentDie(null);
-            ClickedDieParent.Instance.hoveredDieSlot.SlotDie(this);
             currentSlot = ClickedDieParent.Instance.hoveredDieSlot;
+            ClickedDieParent.Instance.hoveredDieSlot.SlotDie(this);
             return;
         }
 
@@ -93,5 +93,10 @@ public class DieLogic : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void FlipDie()
     {
         CurrentValue = (RollRange.y - 1) - CurrentValue;
+    }
+
+    public void NullCurrentSlot()
+    {
+        currentSlot = null;
     }
 }

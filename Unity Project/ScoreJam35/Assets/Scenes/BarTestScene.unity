@@ -789,6 +789,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1321056331845474992, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
+      propertyPath: ResourceCost
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321056331845474992, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
       propertyPath: ActionsOnFilled.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -910,11 +914,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8141381146219384828, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
       propertyPath: m_text
-      value: Warms you up so you don't lose health at night
+      value: Warms you up so you don't lose health at night. Costs 1 wood
       objectReference: {fileID: 0}
     - target: {fileID: 8141381146219384828, guid: cac16de06b2ba4448b82a3a03e9e8420, type: 3}
       propertyPath: m_fontSize
-      value: 27.65
+      value: 21.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

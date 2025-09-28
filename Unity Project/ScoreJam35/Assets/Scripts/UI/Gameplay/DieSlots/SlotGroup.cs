@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Resources;
 using UnityEngine;
 
 public class SlotGroup : MonoBehaviour
@@ -12,6 +13,9 @@ public class SlotGroup : MonoBehaviour
 
     public List<BaseDiceAction> ActionsOnFilled = new List<BaseDiceAction>();
     public int SlotCount = 1;
+
+    public E_Resource CostResource = E_Resource.WOOD;
+    public int ResourceCost = 0;
 
     List<BaseDieSlot> slots = new List<BaseDieSlot>();
     int totalDieValue = 0;
@@ -62,6 +66,14 @@ public class SlotGroup : MonoBehaviour
 
     public void PerformAction()
     {
+        if (PlayerResourceManager.Instance.GetResource(CostResource) < ResourceCost)
+        {
+            UnslotAllDie(false);
+            return;
+        }
+
+        PlayerResourceManager.Instance.ChangeResource(CostResource, -ResourceCost);
+
         foreach (BaseDiceAction action in ActionsOnFilled)
         {
             action.PerformDiceValueAction(totalDieValue);

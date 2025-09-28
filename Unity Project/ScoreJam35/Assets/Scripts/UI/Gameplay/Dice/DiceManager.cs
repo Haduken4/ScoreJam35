@@ -114,6 +114,12 @@ public class DiceManager : MonoBehaviour
 
     public void ReAddDie(GameObject toAdd)
     {
+        DieLogic logic = toAdd.GetComponent<DieLogic>();
+        if (logic)
+        {
+            logic.NullCurrentSlot();
+        }
+
         toAdd.transform.SetParent(transform);
 
         dice.Add(toAdd.transform);
