@@ -1,46 +1,55 @@
 fileFormatVersion: 2
-guid: 6e92dc62c50505144bd215aafee7715f
+guid: 92adc67f8dee00541b22499a437c5c8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3990931593738733368
-    second: Shore_0
+      213: -5386466695518728583
+    second: Shore 1_0
   - first:
-      213: -3249719231435671666
-    second: Shore_1
+      213: -8896874440059523170
+    second: Shore 1_1
   - first:
-      213: 4997124568195902062
-    second: Shore_2
+      213: -5198698764188267250
+    second: Shore 1_2
   - first:
-      213: -641465208430052666
-    second: Shore_3
+      213: 2338797085954750424
+    second: Shore 1_3
   - first:
-      213: 8936686281995207991
-    second: Shore_4
+      213: -3142720609619005918
+    second: Shore 1_4
   - first:
-      213: 7056279360489175661
-    second: Shore_5
+      213: 7031614438752820781
+    second: Shore 1_5
   - first:
-      213: -8827010083193853950
-    second: Shore_6
+      213: 5342309553955645592
+    second: Shore 1_6
   - first:
-      213: 2318846124979127929
-    second: Shore_7
+      213: 3679890792653169565
+    second: Shore 1_7
   - first:
-      213: -2965792983588842106
-    second: Shore_8
+      213: -5059130306823991330
+    second: Shore 1_8
   - first:
-      213: 7721464989595765302
-    second: Shore_9
+      213: 5383998005287940180
+    second: Shore 1_9
   - first:
-      213: 7557176582384532465
-    second: Shore_10
+      213: -4578405501277257631
+    second: Shore 1_10
   - first:
-      213: 6039027407582656103
-    second: Shore_11
+      213: -1882613897557135286
+    second: Shore 1_11
   - first:
-      213: 3319590383124250918
-    second: Shore_12
+      213: -8197747676053716793
+    second: Shore 1_12
+  - first:
+      213: 775827857534089142
+    second: Shore 1_13
+  - first:
+      213: -6798925489831548006
+    second: Shore 1_14
+  - first:
+      213: -6974720574822425207
+    second: Shore 1_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,30 +141,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shore_0
+      name: Shore 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 801
-        height: 374
+        width: 1223
+        height: 605
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8374eafb323a26730800000000000000
-      internalID: 3990931593738733368
+      spriteID: 97e4223441d6f35b0800000000000000
+      internalID: -5386466695518728583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_1
+      name: Shore 1_1
       rect:
         serializedVersion: 2
-        x: 801
+        x: 1334
         y: 0
-        width: 801
-        height: 374
+        width: 1224
+        height: 610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e877586a39da6e2d0800000000000000
-      internalID: -3249719231435671666
+      spriteID: e9feffc95d3f78480800000000000000
+      internalID: -8896874440059523170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_2
+      name: Shore 1_2
       rect:
         serializedVersion: 2
-        x: 1602
+        x: 2669
         y: 0
-        width: 801
-        height: 374
+        width: 1222
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6aa1b1a15a595540800000000000000
-      internalID: 4997124568195902062
+      spriteID: e0dcb4294038ad7b0800000000000000
+      internalID: -5198698764188267250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_3
+      name: Shore 1_3
       rect:
         serializedVersion: 2
-        x: 2403
+        x: 4004
         y: 0
-        width: 801
-        height: 374
+        width: 1220
+        height: 610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ca31c3aace0917f0800000000000000
-      internalID: -641465208430052666
+      spriteID: 8d73d06ee83157020800000000000000
+      internalID: 2338797085954750424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_4
+      name: Shore 1_4
       rect:
         serializedVersion: 2
-        x: 3204
+        x: 5339
         y: 0
-        width: 801
-        height: 374
+        width: 1220
+        height: 610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7354e6b23dc750c70800000000000000
-      internalID: 8936686281995207991
+      spriteID: 22e2c53a140d264d0800000000000000
+      internalID: -3142720609619005918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_5
+      name: Shore 1_5
       rect:
         serializedVersion: 2
-        x: 4005
+        x: 6674
         y: 0
-        width: 801
-        height: 374
+        width: 1220
+        height: 610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6ab0ed41b0fce160800000000000000
-      internalID: 7056279360489175661
+      spriteID: d2e9e53b310559160800000000000000
+      internalID: 7031614438752820781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_6
+      name: Shore 1_6
       rect:
         serializedVersion: 2
-        x: 4806
+        x: 8009
         y: 0
-        width: 801
-        height: 374
+        width: 657
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 208607ac819208580800000000000000
-      internalID: -8827010083193853950
+      spriteID: 898a3bb0c32b32a40800000000000000
+      internalID: 5342309553955645592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_7
+      name: Shore 1_7
       rect:
         serializedVersion: 2
-        x: 5607
-        y: 0
-        width: 801
-        height: 374
+        x: 9354
+        y: 345
+        width: 22
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,20 +314,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9760c20d3423e2020800000000000000
-      internalID: 2318846124979127929
+      spriteID: d93a254dd29911330800000000000000
+      internalID: 3679890792653169565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_8
+      name: Shore 1_8
       rect:
         serializedVersion: 2
-        x: 6408
-        y: 0
-        width: 801
-        height: 374
+        x: 9374
+        y: 363
+        width: 7
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68557dfaef267d6d0800000000000000
-      internalID: -2965792983588842106
+      spriteID: edfc7555acb5ac9b0800000000000000
+      internalID: -5059130306823991330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore_9
+      name: Shore 1_9
       rect:
         serializedVersion: 2
-        x: 7209
-        y: 0
-        width: 801
-        height: 374
+        x: 9379
+        y: 359
+        width: 16
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,8 +358,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63a887a7f77282b60800000000000000
-      internalID: 7721464989595765302
+      spriteID: 450799009adc7ba40800000000000000
+      internalID: 5383998005287940180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore 1_10
+      rect:
+        serializedVersion: 2
+        x: 9394
+        y: 359
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160ccaa347c3670c0800000000000000
+      internalID: -4578405501277257631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore 1_11
+      rect:
+        serializedVersion: 2
+        x: 9399
+        y: 350
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40b4ea72ac9fd5e0800000000000000
+      internalID: -1882613897557135286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore 1_12
+      rect:
+        serializedVersion: 2
+        x: 9427
+        y: 275
+        width: 178
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0c8821cefbb3e80800000000000000
+      internalID: -8197747676053716793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore 1_13
+      rect:
+        serializedVersion: 2
+        x: 12014
+        y: 0
+        width: 1093
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7fb2f635b44ca00800000000000000
+      internalID: 775827857534089142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore 1_14
+      rect:
+        serializedVersion: 2
+        x: 9344
+        y: 0
+        width: 597
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bed3c0a4d55a1a0800000000000000
+      internalID: -6798925489831548006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore 1_15
+      rect:
+        serializedVersion: 2
+        x: 10679
+        y: 0
+        width: 743
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dd9124790d43f90800000000000000
+      internalID: -6974720574822425207
       vertices: []
       indices: 
       edges: []
@@ -372,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a4beffcc1d5d8e744965d4ccae30e611
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -380,20 +508,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":801.0,"y":374.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Shore_0: 3990931593738733368
-      Shore_1: -3249719231435671666
-      Shore_2: 4997124568195902062
-      Shore_3: -641465208430052666
-      Shore_4: 8936686281995207991
-      Shore_5: 7056279360489175661
-      Shore_6: -8827010083193853950
-      Shore_7: 2318846124979127929
-      Shore_8: -2965792983588842106
-      Shore_9: 7721464989595765302
+      Shore 1_0: -5386466695518728583
+      Shore 1_1: -8896874440059523170
+      Shore 1_10: -4578405501277257631
+      Shore 1_11: -1882613897557135286
+      Shore 1_12: -8197747676053716793
+      Shore 1_13: 775827857534089142
+      Shore 1_14: -6798925489831548006
+      Shore 1_15: -6974720574822425207
+      Shore 1_2: -5198698764188267250
+      Shore 1_3: 2338797085954750424
+      Shore 1_4: -3142720609619005918
+      Shore 1_5: 7031614438752820781
+      Shore 1_6: 5342309553955645592
+      Shore 1_7: 3679890792653169565
+      Shore 1_8: -5059130306823991330
+      Shore 1_9: 5383998005287940180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
