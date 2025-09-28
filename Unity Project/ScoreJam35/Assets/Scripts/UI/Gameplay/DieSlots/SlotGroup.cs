@@ -109,6 +109,7 @@ public class SlotGroup : MonoBehaviour
                 if(disableOnScale)
                 {
                     transform.parent.gameObject.SetActive(false);
+                    disableOnScale = false;
                 }
             }
         }

@@ -105,7 +105,7 @@ public class TurnManager : MonoBehaviour
             lastEvent = eventToTrigger;
 
             EventPopup.gameObject.SetActive(true);
-            SpecialEventInfo info = SpecialEventParents[eventToTrigger];
+            SpecialEventInfo info = SpecialEventParents[0];
             EventPopup.EventToEnable = info.gameObject;
             EventPopup.TitleText.text = info.Title;
             EventPopup.DescriptionText.text = info.Description;
