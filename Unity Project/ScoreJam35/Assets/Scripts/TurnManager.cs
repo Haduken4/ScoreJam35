@@ -82,7 +82,7 @@ public class TurnManager : MonoBehaviour
 
         if (turnsUntilEvent <= 0)
         {
-            // Trigger an event :)
+            // TODO: Trigger an event :)
             turnsUntilEvent = UnityEngine.Random.Range(TurnsBetweenEventsRange.x, TurnsBetweenEventsRange.y + 1);
         }
 
