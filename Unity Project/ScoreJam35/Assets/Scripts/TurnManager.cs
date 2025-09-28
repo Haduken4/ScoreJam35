@@ -180,6 +180,9 @@ public class TurnManager : MonoBehaviour
             CampfireStartedTonight = false;
         }
 
+        int total = PlayerResourceManager.Instance.GetFood() + PlayerResourceManager.Instance.GetWater() + PlayerResourceManager.Instance.GetHealth();
+        GlobalGameData.Score += total;
+
         DiceHandManager.EndTurn();
         betweenTurns = true;
         timer = TimeBetweenTurns;
