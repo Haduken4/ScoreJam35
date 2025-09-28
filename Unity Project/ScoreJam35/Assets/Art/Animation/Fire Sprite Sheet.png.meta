@@ -1,25 +1,55 @@
 fileFormatVersion: 2
-guid: 1a7a5751a1a9f4847961d4b73f4d0c19
+guid: 58987cf17eb929b4d8cbe302afada941
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5508864000033039062
-    second: Event_Boar_0
+      213: -2025841462849059631
+    second: Fire Sprite Sheet_0
   - first:
-      213: 4377011850042466443
-    second: Event_Boar_1
+      213: -8739133012207628550
+    second: Fire Sprite Sheet_1
   - first:
-      213: -5524174151447265762
-    second: Event_Boar_2
+      213: -8948422739252581080
+    second: Fire Sprite Sheet_2
   - first:
-      213: -8331547811706505604
-    second: Event_Boar_3
+      213: 7504107345361984519
+    second: Fire Sprite Sheet_3
   - first:
-      213: -3042870320153917721
-    second: Event_Boar_4
+      213: -6955064269168212277
+    second: Fire Sprite Sheet_4
   - first:
-      213: -8204739387854938122
-    second: Event_Boar_5
+      213: 5302867231105636792
+    second: Fire Sprite Sheet_5
+  - first:
+      213: 7437850757954854431
+    second: Fire Sprite Sheet_6
+  - first:
+      213: 6653049489989246539
+    second: Fire Sprite Sheet_7
+  - first:
+      213: 483753260630188676
+    second: Fire Sprite Sheet_8
+  - first:
+      213: 7824221738067800435
+    second: Fire Sprite Sheet_9
+  - first:
+      213: -4116035285601093512
+    second: Fire Sprite Sheet_10
+  - first:
+      213: 428520813710794022
+    second: Fire Sprite Sheet_11
+  - first:
+      213: 7415474595014692886
+    second: Fire Sprite Sheet_12
+  - first:
+      213: 1990820492861160970
+    second: Fire Sprite Sheet_13
+  - first:
+      213: 8421638019534098776
+    second: Fire Sprite Sheet_14
+  - first:
+      213: -7638608029238818894
+    second: Fire Sprite Sheet_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +91,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -128,13 +158,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Event_Boar_0
+      name: Fire Sprite Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 131
-        width: 62
-        height: 49
+        y: 0
+        width: 282
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d228edee9a637c40800000000000000
-      internalID: 5508864000033039062
+      spriteID: 1d4cf934ce3c2e3e0800000000000000
+      internalID: -2025841462849059631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event_Boar_1
+      name: Fire Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 50
-        width: 124
-        height: 138
+        x: 282
+        y: 0
+        width: 282
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b80e47356154ebc30800000000000000
-      internalID: 4377011850042466443
+      spriteID: afe897ac3dc58b680800000000000000
+      internalID: -8739133012207628550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event_Boar_2
+      name: Fire Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 138
-        y: 131
-        width: 62
-        height: 49
+        x: 564
+        y: 0
+        width: 282
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1e3799a0e03653b0800000000000000
-      internalID: -5524174151447265762
+      spriteID: 82d62deede0d0d380800000000000000
+      internalID: -8948422739252581080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event_Boar_3
+      name: Fire Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 22
-        y: 25
-        width: 54
-        height: 54
+        x: 846
+        y: 0
+        width: 282
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c76fc0e5865606c80800000000000000
-      internalID: -8331547811706505604
+      spriteID: 70c53b44fd1f32860800000000000000
+      internalID: 7504107345361984519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Event_Boar_4
+      name: Fire Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 69
-        y: 12
-        width: 62
-        height: 45
+        x: 1128
+        y: 0
+        width: 282
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,30 +261,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e685adc09d85c5d0800000000000000
-      internalID: -3042870320153917721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Event_Boar_5
-      rect:
-        serializedVersion: 2
-        x: 124
-        y: 25
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ff10405ff8e22e80800000000000000
-      internalID: -8204739387854938122
+      spriteID: bc6873e85e5aa7f90800000000000000
+      internalID: -6955064269168212277
       vertices: []
       indices: 
       edges: []
@@ -263,7 +271,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 93e3c123d44986c42afd9cd5604ec64e
     internalID: 0
     vertices: []
     indices: 
@@ -271,14 +279,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":282.0,"y":421.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Event_Boar_0: 5508864000033039062
-      Event_Boar_1: 4377011850042466443
-      Event_Boar_2: -5524174151447265762
-      Event_Boar_3: -8331547811706505604
-      Event_Boar_4: -3042870320153917721
-      Event_Boar_5: -8204739387854938122
+      Fire Sprite Sheet_0: -2025841462849059631
+      Fire Sprite Sheet_1: -8739133012207628550
+      Fire Sprite Sheet_2: -8948422739252581080
+      Fire Sprite Sheet_3: 7504107345361984519
+      Fire Sprite Sheet_4: -6955064269168212277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
