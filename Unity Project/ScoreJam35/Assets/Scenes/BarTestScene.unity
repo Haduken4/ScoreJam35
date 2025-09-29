@@ -164,7 +164,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 58c8dc9e6d3bc34438152f3a8aba9538, type: 3}
   m_Resource: {fileID: 8300000, guid: 58c8dc9e6d3bc34438152f3a8aba9538, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1141,14 +1141,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f107fb7e3d00c274193cd7c2f6523403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AllSources:
+  - Source: {fileID: 41152112}
+    Volume: 0.2
+  - Source: {fileID: 2103781763}
+    Volume: 0.5
+  - Source: {fileID: 411175771}
+    Volume: 0.5
+  - Source: {fileID: 536131404}
+    Volume: 0.3
   DayAmbienceSources:
   - Source: {fileID: 2103781763}
-    Volume: 0.6
+    Volume: 0.5
   NightAmbienceSources:
   - Source: {fileID: 411175771}
-    Volume: 0.7
+    Volume: 0.5
   - Source: {fileID: 536131404}
-    Volume: 0.4
+    Volume: 0.3
   TransitionTime: 3
 --- !u!1 &294977080
 GameObject:
@@ -8912,7 +8921,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 354fb481e6a351d40bb0ea798ac5e5f3, type: 3}
   m_Resource: {fileID: 8300000, guid: 354fb481e6a351d40bb0ea798ac5e5f3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

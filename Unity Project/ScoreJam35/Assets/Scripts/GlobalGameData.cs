@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public static class GlobalGameData
@@ -10,6 +11,13 @@ public static class GlobalGameData
     // Gameplay data
     public static int MinimumDieRoll = 1;
 
+    // Settings
+    public static float MusicVolumeMultiplier = 1;
+    public static float SFXVolumeMultiplier = 1;
+
+    public static event Action OnMusicVolumeChanged;
+    public static event Action OnSFXVolumeChanged;
+
     public static void ResetToDefault(bool includeHighScore = false)
     {
         Score = 0;
@@ -19,5 +27,17 @@ public static class GlobalGameData
             PlayerName = "";
         }
         MinimumDieRoll = 1;
+    }
+
+    public static void ChangeMusicVolume(float volume)
+    {
+        MusicVolumeMultiplier = volume;
+        OnMusicVolumeChanged?.Invoke();
+    }
+
+    public static void ChangeSFXVolume(float volume)
+    {
+        SFXVolumeMultiplier = volume;
+        OnSFXVolumeChanged?.Invoke();
     }
 }
