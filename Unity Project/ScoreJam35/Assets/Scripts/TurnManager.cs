@@ -38,6 +38,11 @@ public class TurnManager : MonoBehaviour
     public float InitialTimer = 1.0f;
     public ColorTransitionCycle DayNightColors = null;
 
+    [Header("Endgame")]
+    public int TurnToEnd = 20;
+    public int ScoreForWinning = 200;
+    public GameObject VictoryPopup = null;
+
     [Header("Data")]
     public bool CampfireStartedTonight = false;
     public GameObject CampfireObject = null;
@@ -95,6 +100,16 @@ public class TurnManager : MonoBehaviour
     public void OnStartTurn()
     {
         DiceHandManager.StartTurn();
+
+        if (turn == TurnToEnd)
+        {
+            FindFirstObjectByType<DayDisplayText>().StartDay();
+
+            GlobalGameData.Score += ScoreForWinning;
+            VictoryPopup.SetActive(true);
+            finished = true;
+            return;
+        }
 
         if (turnsUntilEvent <= 0)
         {

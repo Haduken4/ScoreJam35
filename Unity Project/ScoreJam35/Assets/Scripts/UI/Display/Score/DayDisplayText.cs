@@ -17,7 +17,7 @@ public class DayDisplayText : MonoBehaviour
         TurnManager.Instance.OnStartNight += StartNight;
     }
 
-    void StartDay()
+    public void StartDay()
     {
         TargetImage.sprite = DayIcon;
         TextTarget.text = TurnManager.Instance.GetCurrentDay().ToString();

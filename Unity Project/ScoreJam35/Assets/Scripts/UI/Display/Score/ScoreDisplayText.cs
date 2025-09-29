@@ -10,6 +10,13 @@ public class ScoreDisplayText : MonoBehaviour
     void Start()
     {
         text = GetComponent<TextMeshProUGUI>();
+        if (DisplaysHighScore)
+        {
+            if(GlobalGameData.PersonalBest < GlobalGameData.Score)
+            {
+                GlobalGameData.PersonalBest = GlobalGameData.Score;
+            }
+        }
     }
 
     // Update is called once per frame
