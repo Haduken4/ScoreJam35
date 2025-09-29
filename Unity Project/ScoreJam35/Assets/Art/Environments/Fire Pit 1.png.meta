@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dec4f8ccfec09594b904169ec957e170
+guid: 6456f82ae59ced14c82af91cc755f8e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3135942384026599723
-    second: Fire Pit_0
+      213: 652156135061154727
+    second: Fire Pit 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire Pit_0
+      name: Fire Pit 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b214ffbbbfa158b20800000000000000
-      internalID: 3135942384026599723
+      spriteID: 7ab6960bc8cec0900800000000000000
+      internalID: 652156135061154727
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fire Pit_0: 3135942384026599723
+      Fire Pit 1_0: 652156135061154727
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
