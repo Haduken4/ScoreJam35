@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 125
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -141,60 +141,42 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shore 1_0
+      name: Shore_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1223
-        height: 605
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97e4223441d6f35b0800000000000000
-      internalID: -5386466695518728583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_1
-      rect:
-        serializedVersion: 2
-        x: 1334
-        y: 0
-        width: 1224
-        height: 610
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9feffc95d3f78480800000000000000
-      internalID: -8896874440059523170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_2
-      rect:
-        serializedVersion: 2
-        x: 2669
-        y: 0
-        width: 1222
+        width: 1335
         height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,296 +184,208 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e0dcb4294038ad7b0800000000000000
-      internalID: -5198698764188267250
+      spriteID: 19608d0644a4e6649a340c8349faf2af
+      internalID: -1435473816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore 1_3
+      name: Shore_1
       rect:
         serializedVersion: 2
-        x: 4004
+        x: 1335
         y: 0
-        width: 1220
-        height: 610
+        width: 1335
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8d73d06ee83157020800000000000000
-      internalID: 2338797085954750424
+      spriteID: 7d914add68173a74c83798e237f6e3f0
+      internalID: -1185142862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore 1_4
+      name: Shore_2
       rect:
         serializedVersion: 2
-        x: 5339
+        x: 2670
         y: 0
-        width: 1220
-        height: 610
+        width: 1335
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 22e2c53a140d264d0800000000000000
-      internalID: -3142720609619005918
+      spriteID: f9b2c9bd810bd5d4b987bae8429ffad8
+      internalID: 16193056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore 1_5
+      name: Shore_3
       rect:
         serializedVersion: 2
-        x: 6674
+        x: 4005
         y: 0
-        width: 1220
-        height: 610
+        width: 1335
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d2e9e53b310559160800000000000000
-      internalID: 7031614438752820781
+      spriteID: af46a79954b70f646a38c3281bde006f
+      internalID: 76958200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore 1_6
+      name: Shore_4
       rect:
         serializedVersion: 2
-        x: 8009
+        x: 5340
         y: 0
-        width: 657
-        height: 376
+        width: 1335
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 898a3bb0c32b32a40800000000000000
-      internalID: 5342309553955645592
+      spriteID: 255064374ead42d489b8fcfbadc1f1a3
+      internalID: 2118016972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore 1_7
+      name: Shore_5
       rect:
         serializedVersion: 2
-        x: 9354
-        y: 345
-        width: 22
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d93a254dd29911330800000000000000
-      internalID: 3679890792653169565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_8
-      rect:
-        serializedVersion: 2
-        x: 9374
-        y: 363
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edfc7555acb5ac9b0800000000000000
-      internalID: -5059130306823991330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_9
-      rect:
-        serializedVersion: 2
-        x: 9379
-        y: 359
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 450799009adc7ba40800000000000000
-      internalID: 5383998005287940180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_10
-      rect:
-        serializedVersion: 2
-        x: 9394
-        y: 359
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 160ccaa347c3670c0800000000000000
-      internalID: -4578405501277257631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_11
-      rect:
-        serializedVersion: 2
-        x: 9399
-        y: 350
-        width: 33
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a40b4ea72ac9fd5e0800000000000000
-      internalID: -1882613897557135286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_12
-      rect:
-        serializedVersion: 2
-        x: 9427
-        y: 275
-        width: 178
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c0c8821cefbb3e80800000000000000
-      internalID: -8197747676053716793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shore 1_13
-      rect:
-        serializedVersion: 2
-        x: 12014
+        x: 6675
         y: 0
-        width: 1093
-        height: 556
+        width: 1335
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6b7fb2f635b44ca00800000000000000
-      internalID: 775827857534089142
+      spriteID: ff95c299cc4165648bba54d6e2183966
+      internalID: -1898978399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore 1_14
+      name: Shore_6
       rect:
         serializedVersion: 2
-        x: 9344
+        x: 8010
         y: 0
-        width: 597
-        height: 348
+        width: 1335
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a9bed3c0a4d55a1a0800000000000000
-      internalID: -6798925489831548006
+      spriteID: 71f75720076074146a02fdf09ee80ce7
+      internalID: -2027130484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shore 1_15
+      name: Shore_7
       rect:
         serializedVersion: 2
-        x: 10679
+        x: 9345
         y: 0
-        width: 743
-        height: 362
+        width: 1335
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 98dd9124790d43f90800000000000000
-      internalID: -6974720574822425207
+      spriteID: 843b38151d44d6d43b691cb250549bba
+      internalID: 1907362843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore_8
+      rect:
+        serializedVersion: 2
+        x: 10680
+        y: 0
+        width: 1335
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738d975b8beb69248acf7effb05d0285
+      internalID: 1412271864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shore_9
+      rect:
+        serializedVersion: 2
+        x: 12015
+        y: 0
+        width: 1335
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6b6f2b97b16b54e96d44c52add384a
+      internalID: 1078516015
       vertices: []
       indices: 
       edges: []
@@ -500,7 +394,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4fb90f1fb7f18ed49b02f128bf84bb93
     internalID: 0
     vertices: []
     indices: 
@@ -508,24 +402,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":1335.0,"y":624.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Shore 1_0: -5386466695518728583
-      Shore 1_1: -8896874440059523170
-      Shore 1_10: -4578405501277257631
-      Shore 1_11: -1882613897557135286
-      Shore 1_12: -8197747676053716793
-      Shore 1_13: 775827857534089142
-      Shore 1_14: -6798925489831548006
-      Shore 1_15: -6974720574822425207
-      Shore 1_2: -5198698764188267250
-      Shore 1_3: 2338797085954750424
-      Shore 1_4: -3142720609619005918
-      Shore 1_5: 7031614438752820781
-      Shore 1_6: 5342309553955645592
-      Shore 1_7: 3679890792653169565
-      Shore 1_8: -5059130306823991330
-      Shore 1_9: 5383998005287940180
+      Shore_0: -1435473816
+      Shore_1: -1185142862
+      Shore_2: 16193056
+      Shore_3: 76958200
+      Shore_4: 2118016972
+      Shore_5: -1898978399
+      Shore_6: -2027130484
+      Shore_7: 1907362843
+      Shore_8: 1412271864
+      Shore_9: 1078516015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
