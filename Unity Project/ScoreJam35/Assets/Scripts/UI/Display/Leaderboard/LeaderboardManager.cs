@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LootLocker.Requests;
+using System;
 
 public class LeaderboardData
 {
@@ -13,6 +14,8 @@ public class LeaderboardData
 public class LeaderboardManager : MonoBehaviour
 {
     public string Leaderboard = "Classic Set";
+
+    public event Action OnNewScore;
 
     bool loaded = false;
     bool thinking = false;
@@ -72,6 +75,8 @@ public class LeaderboardManager : MonoBehaviour
         thinking = true;
         LootLockerSDKManager.SetPlayerName(GlobalGameData.PlayerName, (response) => { });
         LootLockerSDKManager.SubmitScore(playerID, score, Leaderboard, GlobalGameData.PlayerName, SubmitResponse);
+
+        OnNewScore?.Invoke();
 
         return true;
     }

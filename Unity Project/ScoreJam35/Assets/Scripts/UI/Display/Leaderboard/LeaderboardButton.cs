@@ -7,8 +7,6 @@ using TMPro;
 public class LeaderboardButton : MonoBehaviour
 {
     public TMP_InputField NameField = null;
-    //public TextMeshProUGUI StatusText = null;
-
 
     bool submitted = false;
     LeaderboardManager lm = null;

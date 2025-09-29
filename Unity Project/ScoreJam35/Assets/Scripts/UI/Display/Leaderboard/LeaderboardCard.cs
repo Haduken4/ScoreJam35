@@ -20,6 +20,7 @@ public class LeaderboardCard : MonoBehaviour
     void Start()
     {
         lm = FindFirstObjectByType<LeaderboardManager>();
+        lm.OnNewScore += Refresh;
         data.success = false;
         data.score = 0;
         data.name = "";
