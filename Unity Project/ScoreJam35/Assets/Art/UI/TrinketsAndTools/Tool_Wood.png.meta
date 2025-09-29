@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ce23f784cbb3b77419d3fe8bca03c1b7
+guid: 1614bc30f6d377141818bde7afd1c1b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5259516402135053751
-    second: Tool_Storage_0
+      213: 6244324757978284219
+    second: Tool_Wood_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tool_Storage_0
+      name: Tool_Wood_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 13
+        y: 7
         width: 200
-        height: 174
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b5b9973d4e8df840800000000000000
-      internalID: 5259516402135053751
+      spriteID: bb00975984c48a650800000000000000
+      internalID: 6244324757978284219
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tool_Storage_0: 5259516402135053751
+      Tool_Wood_0: 6244324757978284219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

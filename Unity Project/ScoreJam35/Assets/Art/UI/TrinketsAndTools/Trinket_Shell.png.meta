@@ -5,18 +5,6 @@ TextureImporter:
   - first:
       213: 3440526341752851485
     second: Trinket_Shell_0
-  - first:
-      213: 485332310805533573
-    second: Trinket_Shell_1
-  - first:
-      213: 6182674380682701463
-    second: Trinket_Shell_2
-  - first:
-      213: 732449845388131243
-    second: Trinket_Shell_3
-  - first:
-      213: -6140278994162121155
-    second: Trinket_Shell_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -128,10 +103,10 @@ TextureImporter:
       name: Trinket_Shell_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 161
-        width: 41
-        height: 25
+        x: 8
+        y: 0
+        width: 184
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,94 +117,6 @@ TextureImporter:
       bones: []
       spriteID: d1c8d88aa743fbf20800000000000000
       internalID: 3440526341752851485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Shell_1
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 178
-        width: 26
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 583559f4a2f3cb600800000000000000
-      internalID: 485332310805533573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Shell_2
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 22
-        width: 136
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79a208e87954dc550800000000000000
-      internalID: 6182674380682701463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Shell_3
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 159
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bab3622f04f2a2a00800000000000000
-      internalID: 732449845388131243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Shell_4
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 141
-        width: 66
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d368c2399c859caa0800000000000000
-      internalID: -6140278994162121155
       vertices: []
       indices: 
       edges: []
@@ -249,10 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Trinket_Shell_0: 3440526341752851485
-      Trinket_Shell_1: 485332310805533573
-      Trinket_Shell_2: 6182674380682701463
-      Trinket_Shell_3: 732449845388131243
-      Trinket_Shell_4: -6140278994162121155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

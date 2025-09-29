@@ -5,36 +5,6 @@ TextureImporter:
   - first:
       213: -8905366367654935333
     second: Trinket_Idol_0
-  - first:
-      213: 8726923577113881515
-    second: Trinket_Idol_1
-  - first:
-      213: 7925105166120113233
-    second: Trinket_Idol_2
-  - first:
-      213: -8334694570577563178
-    second: Trinket_Idol_3
-  - first:
-      213: -6750940371999189254
-    second: Trinket_Idol_4
-  - first:
-      213: -4413347442424095457
-    second: Trinket_Idol_5
-  - first:
-      213: -2909509499265261561
-    second: Trinket_Idol_6
-  - first:
-      213: 7032312015138976731
-    second: Trinket_Idol_7
-  - first:
-      213: -2776629671619648800
-    second: Trinket_Idol_8
-  - first:
-      213: 1665683508483242912
-    second: Trinket_Idol_9
-  - first:
-      213: -2053509765728238271
-    second: Trinket_Idol_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -146,10 +103,10 @@ TextureImporter:
       name: Trinket_Idol_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 167
-        width: 16
-        height: 28
+        x: 31
+        y: 0
+        width: 138
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,226 +117,6 @@ TextureImporter:
       bones: []
       spriteID: bd48735a878c96480800000000000000
       internalID: -8905366367654935333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_1
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 156
-        width: 42
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: babaad391c24c1970800000000000000
-      internalID: 8726923577113881515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 175
-        width: 35
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 154d33ad821abfd60800000000000000
-      internalID: 7925105166120113233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_3
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 124
-        width: 77
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d1f8597277355c80800000000000000
-      internalID: -8334694570577563178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_4
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 96
-        width: 15
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af6152bef77df42a0800000000000000
-      internalID: -6750940371999189254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_5
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 66
-        width: 121
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1ddeef42e3a0c2c0800000000000000
-      internalID: -4413347442424095457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 83
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7006ba196885f97d0800000000000000
-      internalID: -2909509499265261561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_7
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 30
-        width: 64
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd3f11cd48ac79160800000000000000
-      internalID: 7032312015138976731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_8
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 15
-        width: 47
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e22d4e560e6779d0800000000000000
-      internalID: -2776629671619648800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_9
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 6
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0abbe576352bd1710800000000000000
-      internalID: 1665683508483242912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trinket_Idol_10
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 36
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14509fe7fb77083e0800000000000000
-      internalID: -2053509765728238271
       vertices: []
       indices: 
       edges: []
@@ -399,16 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Trinket_Idol_0: -8905366367654935333
-      Trinket_Idol_1: 8726923577113881515
-      Trinket_Idol_10: -2053509765728238271
-      Trinket_Idol_2: 7925105166120113233
-      Trinket_Idol_3: -8334694570577563178
-      Trinket_Idol_4: -6750940371999189254
-      Trinket_Idol_5: -4413347442424095457
-      Trinket_Idol_6: -2909509499265261561
-      Trinket_Idol_7: 7032312015138976731
-      Trinket_Idol_8: -2776629671619648800
-      Trinket_Idol_9: 1665683508483242912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
