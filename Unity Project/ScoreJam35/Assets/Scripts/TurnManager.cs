@@ -9,7 +9,9 @@ public class TurnManager : MonoBehaviour
     public event Action OnEndOfTurn;
     public event Action OnStartOfTurn;
     public event Action OnStartDay;
+    public event Action OnEndDay;
     public event Action OnStartNight;
+    public event Action OnEndNight;
     public event Action OnStartedRaining;
     public event Action OnFinishedRaining;
 
@@ -195,10 +197,12 @@ public class TurnManager : MonoBehaviour
         // Next turn is day
         if (turn % 2 == 0)
         {
+            OnEndNight?.Invoke();
             DayNightColors.StartTransition(TimeBetweenTurns, DayNightColors.DaytimePoint);
         }
         else // Next turn is night
         {
+            OnEndDay?.Invoke();
             DayNightColors.StartTransition(TimeBetweenTurns, DayNightColors.NightTimePoint);
         }
 
