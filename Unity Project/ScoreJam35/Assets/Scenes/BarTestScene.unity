@@ -8977,8 +8977,8 @@ MonoBehaviour:
   - {fileID: 1404272378}
   - {fileID: 245111114}
   EventPopup: {fileID: 1515475436}
-  FirstEventTurnRange: {x: 6, y: 8}
-  TurnsBetweenEventsRange: {x: 3, y: 5}
+  FirstEventTurnRange: {x: 4, y: 4}
+  TurnsBetweenEventsRange: {x: 2, y: 4}
   FoodCostPerTurn: 4
   WaterCostPerTurn: 4
   HealthLossPerColdNight: 5
