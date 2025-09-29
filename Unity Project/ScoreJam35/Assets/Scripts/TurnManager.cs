@@ -112,6 +112,7 @@ public class TurnManager : MonoBehaviour
             EventPopup.TitleText.text = info.Title;
             EventPopup.DescriptionText.text = info.Description;
             EventPopup.IconImage.sprite = info.Icon;
+            EventPopup.Player = info.Player;
 
             turnsUntilEvent = UnityEngine.Random.Range(TurnsBetweenEventsRange.x, TurnsBetweenEventsRange.y + 1);
         }
