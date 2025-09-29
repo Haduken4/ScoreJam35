@@ -55,6 +55,11 @@ public class AmbiencePlayer : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        GlobalGameData.OnMusicVolumeChanged -= OnMusicVolumeChanged;
+    }
+
     void OnEndDay()
     {
         transitioning = true;

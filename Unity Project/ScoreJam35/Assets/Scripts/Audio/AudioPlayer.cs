@@ -13,7 +13,10 @@ public class AudioPlayer : MonoBehaviour
         source = GetComponent<AudioSource>();
         float multiplier = Music ? GlobalGameData.MusicVolumeMultiplier : GlobalGameData.SFXVolumeMultiplier;
 
-        source.volume = Random.Range(VolumeRange.x, VolumeRange.y) * multiplier;
+        if (source.volume != 0)
+        {
+            source.volume = Random.Range(VolumeRange.x, VolumeRange.y) * multiplier;
+        }
     }
 
     private void Update()

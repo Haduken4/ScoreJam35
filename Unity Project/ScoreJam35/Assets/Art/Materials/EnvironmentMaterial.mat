@@ -59,13 +59,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _Opacity: 0.69803923
+    - _Opacity: 0.6860687
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Gradient_Color: {r: 0.9999908, g: 0.9372448, b: 0.6548958, a: 0.69803923}
+    - _Gradient_Color: {r: 0.44516203, g: 0.38845226, b: 0.33576417, a: 0.6860687}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

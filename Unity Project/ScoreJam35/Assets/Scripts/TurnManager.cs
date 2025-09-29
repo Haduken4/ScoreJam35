@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class TurnManager : MonoBehaviour
 {
@@ -48,6 +49,9 @@ public class TurnManager : MonoBehaviour
     public GameObject CampfireObject = null;
     public bool CurrentlyRaining = false;
 
+    [Header("Pause")]
+    public GameObject PausePopup = null;
+
     float timer = 0;
     bool betweenTurns = false;
     int turn = 0;
@@ -84,6 +88,14 @@ public class TurnManager : MonoBehaviour
         if (finished)
         {
             return;
+        }
+
+        if (PausePopup)
+        {
+            if(Keyboard.current.escapeKey.wasPressedThisFrame || Keyboard.current.pKey.wasPressedThisFrame)
+            {
+                PausePopup.SetActive(!PausePopup.activeSelf);
+            }
         }
 
         if (betweenTurns)
