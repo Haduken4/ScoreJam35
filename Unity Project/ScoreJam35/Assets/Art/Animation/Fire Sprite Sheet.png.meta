@@ -144,6 +144,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -151,10 +177,10 @@ TextureImporter:
       name: Fire Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 325
-        y: 299
-        width: 15
-        height: 14
+        x: 0
+        y: 0
+        width: 220
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +199,10 @@ TextureImporter:
       name: Fire Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 273
-        width: 22
-        height: 21
+        x: 220
+        y: 0
+        width: 220
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +221,10 @@ TextureImporter:
       name: Fire Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 330
-        y: 276
-        width: 13
-        height: 14
+        x: 440
+        y: 0
+        width: 220
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +243,10 @@ TextureImporter:
       name: Fire Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 264
-        y: 254
-        width: 12
-        height: 12
+        x: 660
+        y: 0
+        width: 220
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,297 +261,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 530
-        y: 256
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc6873e85e5aa7f90800000000000000
-      internalID: -6955064269168212277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 530
-        y: 248
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b95c11a6a1979940800000000000000
-      internalID: 5302867231105636792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 738
-        y: 220
-        width: 72
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1ed4406bdd883760800000000000000
-      internalID: 7437850757954854431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 215
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4e17e30341645c50800000000000000
-      internalID: 6653049489989246539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 0
-        width: 187
-        height: 212
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 482acca0703a6b600800000000000000
-      internalID: 483753260630188676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 205
-        width: 16
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 371bb6d5738359c60800000000000000
-      internalID: 7824221738067800435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 209
-        width: 23
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 878f5c627b7e0e6c0800000000000000
-      internalID: -4116035285601093512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 205
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62dd710e86962f500800000000000000
-      internalID: 428520813710794022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 2
-        width: 185
-        height: 245
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 610d8c4fade09e660800000000000000
-      internalID: 7415474595014692886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 664
-        y: 0
-        width: 181
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0ebe80c0b0d0ab10800000000000000
-      internalID: 1990820492861160970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 71
-        width: 41
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8511145b82bafd470800000000000000
-      internalID: 8421638019534098776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 619
-        y: 105
-        width: 12
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b706cee7763ef590800000000000000
-      internalID: -7638608029238818894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Sprite Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 623
-        y: 111
-        width: 13
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f5bbce99f11d5020800000000000000
-      internalID: 2332039945856464373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ef8e81173e5a1e347b42bd9e7897b1f8
     internalID: 0
     vertices: []
     indices: 
@@ -533,25 +273,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":220.0,"y":313.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Fire Sprite Sheet_0: -2025841462849059631
       Fire Sprite Sheet_1: -8739133012207628550
-      Fire Sprite Sheet_10: -4116035285601093512
-      Fire Sprite Sheet_11: 428520813710794022
-      Fire Sprite Sheet_12: 7415474595014692886
-      Fire Sprite Sheet_13: 1990820492861160970
-      Fire Sprite Sheet_14: 8421638019534098776
-      Fire Sprite Sheet_15: -7638608029238818894
-      Fire Sprite Sheet_16: 2332039945856464373
       Fire Sprite Sheet_2: -8948422739252581080
       Fire Sprite Sheet_3: 7504107345361984519
-      Fire Sprite Sheet_4: -6955064269168212277
-      Fire Sprite Sheet_5: 5302867231105636792
-      Fire Sprite Sheet_6: 7437850757954854431
-      Fire Sprite Sheet_7: 6653049489989246539
-      Fire Sprite Sheet_8: 483753260630188676
-      Fire Sprite Sheet_9: 7824221738067800435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
